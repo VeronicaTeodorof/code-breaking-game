@@ -1,5 +1,5 @@
 # Codebreaking Game
-This is a computer codebreaking game similar to the paper and pencil game [bulls and cows](https://en.wikipedia.org/wiki/Bulls_and_cows) or [pigs and bulls](https://en.wikipedia.org/wiki/Bulls_and_cows) in that it uses digits for the code, the difference being that in the paper and pencil game digits must be all different, while in the computer version repetitions and permitted. In this aspect this game is more similar to the board game [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game)), which uses colours for the code and repetitions are permitted.
+This is a computer codebreaking game similar to the paper and pencil game [bulls and cows](https://en.wikipedia.org/wiki/Bulls_and_cows) or [pigs and bulls](https://en.wikipedia.org/wiki/Bulls_and_cows) in that it uses digits for the code, the difference being that in the paper and pencil game digits must be all different, while in the computer version repetitions are permitted. In this aspect this game is more similar to the board game [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game)), which uses colours for the code and repetitions are permitted.
 
 How it works:
 
