@@ -9,8 +9,8 @@ This is a trial and error game which seeks to develop critical thinking and logi
 
 ## Table of Contents
 
-### 1. User Experience (UX)
-- Project Goals
+### <a href="#ux">1. User Experience (UX)</a>
+- <a href="#project-goals">Project Goals</a>
 - Developer Goals
 - User Stories
 
@@ -46,3 +46,8 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Media
 - Acknowledgements
 
+
+## <h2 id="ux">1. User Experience (UX)</h2>
+
+### <h3 id="project-goals">Project Goals</h3>
+The goal of this project is to deliver a responsive, fully-functional, critical thinking game, suitable for players of all ages. In its final stage it would target particularly a younger audience segment through its imagery, sounds and levels of difficulty (players could choose the number of numerals that can be used to form the 4 digit code, with as few as 2 numerals: 0 and 1 forming the easiest level). Young children could start playing this as a fun game of chance, only to realize that in order to win they need to start developing some thinking strategies. 
