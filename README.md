@@ -12,7 +12,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 ### <a href="#ux">1. User Experience (UX)</a>
 - <a href="#project-goals">Project Goals</a>
 - <a href="#developer-goals">Developer Goals</a>
-- User Stories
+- <a href ="#user-stories">User Stories</a>
 
 ### 2. Development
 
@@ -58,3 +58,27 @@ The goal of this project is to deliver a responsive, fully-functional, critical 
 - to deliver a real world application using HTML, CSS and JavaScript;
 - to deliver an application that would be included in her portfolio;
 
+### <h3 id="user-stories">User Stories</h3>
+As a First-Time Player, I need:
+1. an intuitive design, so that I can start playing the game quickly, without frustration;
+2. to easily find instructions for the game, so that I know how to play it;
+
+As a Player, I need:
+1. a responsive layout, so that I can play the game on different devices;
+2. a Play button, so that I can start playing the game;
+3. an input area, so that I can attempt breaking the code;
+4. feedback for my guess, to know how close I am to breaking the code;
+5. to see all my previous tries displayed, so that I can compare them and think about the solution;
+6. to know how many tries I have left, to adopt the best strategy in the given situation;
+7. a replay button, so that I can play a new game after finishing the previous one;
+
+As a Player, I would like:
+1. to have beautiful images and possibly a story associated with the game, to make my playing experience more interesting;
+2. to have a reward for winning the game, so that I enjoy it and continue to play it;
+3. to have something happening when I lose the game, so that I have fun;
+4. to have sounds associated with the game, to enhance the playing experience;
+5. to have the options of enabling/ disabling sounds, so that can choose the one I want;
+6. to be able to select the level of difficulty, so that I can choose the one that suits my abilities;
+
+As a developer, I want:
+1. to experiment a test driven approach at least for the basic functionality of this game, so that I have a better understanding of this process and how to apply it in a project;
