@@ -44,6 +44,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Code Used
 - Content
 - Media
+- <a href="#documentation">Documentation</a>
 - Acknowledgements
 
 
@@ -83,3 +84,8 @@ As a Player, I would like:
 
 As a developer, I want:
 1. to experiment a test driven approach at least for the basic functionality of this game, so that I have a better understanding of this process and how to apply it in a project;
+
+## <h2 id="credits2">7. Credits</h2>
+### <h3 id="documentation">Documentation</h3>
+
+While trying to understand what intuitive design for a game means, and what the acceptance criteria and tasks whould be in order to meet this user story, I realized that I need to add another user story, the one about input validation, because no player wants to be allowed to enter invalid data type, but they want to be warned about that, and easily correct the mistake. So this user story is written with the help of AI overview for "acceptance criteria for intuitive design of a game".
