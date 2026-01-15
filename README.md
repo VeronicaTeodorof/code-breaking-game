@@ -67,10 +67,11 @@ As a Player, I need:
 1. a responsive layout, so that I can play the game on different devices;
 2. a Play button, so that I can start playing the game;
 3. an input area, so that I can attempt breaking the code;
-4. feedback for my guess, to know how close I am to breaking the code;
-5. to see all my previous tries displayed, so that I can compare them and think about the solution;
-6. to know how many tries I have left, to adopt the best strategy in the given situation;
-7. a replay button, so that I can play a new game after finishing the previous one;
+4. to be given warning messages for incorrect input type, so that I can correct that before submitting;
+5. feedback for my guess, to know how close I am to breaking the code;
+6. to see all my previous tries displayed, so that I can compare them and think about the solution;
+7. to know how many tries I have left, to adopt the best strategy in the given situation;
+8. a replay button, so that I can play a new game after finishing the previous one;
 
 As a Player, I would like:
 1. to have beautiful images and possibly a story associated with the game, to make my playing experience more interesting;
