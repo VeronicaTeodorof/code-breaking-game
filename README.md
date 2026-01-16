@@ -14,7 +14,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#developer-goals">Developer Goals</a>
 - <a href ="#user-stories">User Stories</a>
 
-### 2. Development
+### <a href="#development">2. Development Life Cycle</a>
 
 ### 3. Design
 - Features
@@ -84,6 +84,11 @@ As a Player, I would like:
 
 As a developer, I want:
 1. to experiment a test driven approach at least for the basic functionality of this game, so that I have a better understanding of this process and how to apply it in a project;
+
+## <h2 id="development">2. Development Life Cycle</h2>
+
+This game is going to be developed in several phases and with a mobile first, functionality first mindset. 
+The first phase aims to deliver the MVP, a fully functional game with only strictly necessary features.
 
 ## <h2 id="credits2">7. Credits</h2>
 ### <h3 id="documentation">Documentation</h3>
