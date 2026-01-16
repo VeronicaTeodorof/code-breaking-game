@@ -16,8 +16,8 @@ This is a trial and error game which seeks to develop critical thinking and logi
 
 ### <a href="#development">2. Development Life Cycle</a>
 
-### 3. Design
-- Features
+### <a href="#design">3. Design</a>
+- <a href="#features">Features</a>
 - Typography
 - Colour Scheme
 - Wireframes
@@ -89,6 +89,11 @@ As a developer, I want:
 
 This game is going to be developed in several phases and with a mobile first, functionality first mindset. 
 The first phase aims to deliver the MVP, a fully functional game with only strictly necessary features.
+
+## <h2 id="design">3. Design</h2>
+
+### <h3 id="features">Features</h3>
+In the first phase there will be minimal features: a heading, a feedback section and a playing section. The playing section will include: the input fields, the submit button and the play button.
 
 ## <h2 id="credits2">7. Credits</h2>
 ### <h3 id="documentation">Documentation</h3>
