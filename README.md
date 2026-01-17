@@ -22,8 +22,8 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Colour Scheme
 - <a href="#wireframes">Wireframes</a>
 
-### 4. Technologies Used
-- Languages Used
+### <a href="#technologies">4. Technologies Used</a>
+- <a href="#languages">Languages Used</a>
 - Frameworks, Libraries & Programs Used
 
 ### 5. Deployment and Local Development
@@ -97,6 +97,11 @@ In the first phase there will be minimal features: a heading, a feedback section
 
 ### <h3 id="wireframes">Wireframes</h3>
 [First phase wireframes](readme-assets/first-phase/first-phase-wireframe.png)
+
+## <h2 id="technologies">4. Technologies Used</h2>
+### <h3 id="languages">Languages Used</h3>
+HTML has been used to shape the skeleton of the game page.
+
 
 ## <h2 id="credits2">7. Credits</h2>
 ### <h3 id="documentation">Documentation</h3>
