@@ -30,11 +30,11 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Deployment
 - Local Development
 
-### 6. Testing
+### <a href="#testing">6. Testing</a>
 - Full Testing
 - Solved Bugs 
 - Known Bugs
-- W3C Validator
+- <a href="#w3c">W3C Validation</a>
 - JavaScript Validation
 - Lighthouse
 - Behaviour Driven Development and Testing User Stories
@@ -101,6 +101,15 @@ In the first phase there will be minimal features: a heading, a feedback section
 ## <h2 id="technologies">4. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
 HTML has been used to shape the skeleton of the game page.
+
+## <h2 id="testing">6. Testing</h2>
+### <h3 id="w3c">W3C Validation</h3>
+First phase:
+
+Initial validation of the HTML boilerplate shows two errors: [initial HTML boilerplate validation]
+(readme-assets/first-phase/W3C-initial-test-HTMLboilerplate.png)
+
+Lesson learned: validate before committing.
 
 
 ## <h2 id="credits2">7. Credits</h2>
