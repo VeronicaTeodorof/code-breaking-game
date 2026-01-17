@@ -26,8 +26,8 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#languages">Languages Used</a>
 - Frameworks, Libraries & Programs Used
 
-### 5. Deployment and Local Development
-- Deployment
+### <a href="#deployment-and-development">5. Deployment and Local Development</a>
+- <a href="#deployment">Deployment</a>
 - Local Development
 
 ### <a href="#testing">6. Testing</a>
@@ -101,6 +101,20 @@ In the first phase there will be minimal features: a heading, a feedback section
 ## <h2 id="technologies">4. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
 HTML has been used to shape the skeleton of the game page.
+
+## <h2 id="deployment-and-development">5. Deployment and Local Development
+### <h3 id="deployment">Deployment</h3>
+
+The live website was deployed using GitHub Pages at: <a href="https://veronicateodorof.github.io/code-breaking-game/">https://veronicateodorof.github.io/code-breaking-game/</a> 
+
+Instructions on how to achieve this can be found below:
+
+1. Log into your GitHub account (or sign up if you don't have one).
+2. Go to the repository for this project: <a href="https://github.com/VeronicaTeodorof/code-breaking-game/">https://github.com/VeronicaTeodorof/code-breaking-game</a>.
+3. Click on the Settings link on the right hand side of the top navigation bar.
+4. In the left hand side navigation bar click on the Pages link.
+5. Under the Build and deployment header, in the Source section, select main branch from the dropdown menu. Make sure Root is selected in the dropdown select folder menu.
+6. Click Save. The live GitHub Pages website is now deployed at the URL shown.
 
 ## <h2 id="testing">6. Testing</h2>
 ### <h3 id="w3c">W3C Validation</h3>
