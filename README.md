@@ -110,6 +110,8 @@ Initial validation of the HTML boilerplate shows two errors: [initial HTML boile
 
 Lesson learned: validate  and check before committing.
 
+The errors have been corrected and the HTML boilerplate has been validated: [validation of HTML boilerplate](readme-assets/first-phase/html-boilerplate-validated.png)
+
 
 ## <h2 id="credits2">7. Credits</h2>
 ### <h3 id="documentation">Documentation</h3>
