@@ -109,6 +109,7 @@ As the game in its final form would ideally include the images of a sleeping dra
 ## <h2 id="technologies">4. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
 HTML has been used to shape the skeleton of the game page.
+CSS has been used to style the page.
 
 ### <h3 id="frameworks">Frameworks, Libraries & Programs Used</h3>
 
