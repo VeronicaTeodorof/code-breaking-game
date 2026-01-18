@@ -116,6 +116,8 @@ Git - for version control;
 
 Github - to save and store the files for the game;
 
+Google Fonts - for the fonts used in the game;
+
 https://coolors.co/ for creating the colour pallette;
 
 ## <h2 id="deployment-and-development">5. Deployment and Local Development
