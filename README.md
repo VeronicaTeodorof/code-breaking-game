@@ -19,7 +19,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 ### <a href="#design">3. Design</a>
 - <a href="#features">Features</a>
 - Typography
-- Colour Scheme
+- <a href="#colours">Colour Scheme</a>
 - <a href="#wireframes">Wireframes</a>
 
 ### <a href="#technologies">4. Technologies Used</a>
@@ -94,6 +94,11 @@ The first phase aims to deliver the MVP, a fully functional game with only stric
 
 ### <h3 id="features">Features</h3>
 In the first phase there will be minimal features: a heading, a feedback section and a playing section. The playing section will include: the input fields, the submit button and the play button.
+
+### <h3 id="colours">Colour Scheme</h3>
+As the game in its final form would ideally include the images of a sleeping dragon and a locked treasure chest, for the MVP I chose a colour pallette inspired by these images: "dragon-green"= #0B870D, "chest-brown"= #46211C, "treasure-gold"= #FFD700, and "contrast-red"= #FF0000. It's very likely that I will change the colours on the way, but it's something to start with.
+
+<img src="readme-assets/first-phase/codebreaker-game-pallette.png">
 
 ### <h3 id="wireframes">Wireframes</h3>
 [First phase wireframes](readme-assets/first-phase/first-phase-wireframe.png)
