@@ -1,3 +1,12 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* CSS variables */
+:root {
+    --heading-font: "Mystery Quest",  "Georgia", serif;
+    --primary-font: "Roboto", sans-serif;
+    --dragon-green: #0B870D;
+    --chest-brown: #46211C;
+    --treasure-gold: #FFD700;
+    --contrast-red:  #FF0000;
+}
