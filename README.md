@@ -18,7 +18,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 
 ### <a href="#design">3. Design</a>
 - <a href="#features">Features</a>
-- Typography
+- <a href="#typography">Typography</a>
 - <a href="#colours">Colour Scheme</a>
 - <a href="#wireframes">Wireframes</a>
 
@@ -94,6 +94,9 @@ The first phase aims to deliver the MVP, a fully functional game with only stric
 
 ### <h3 id="features">Features</h3>
 In the first phase there will be minimal features: a heading, a feedback section and a playing section. The playing section will include: the input fields, the submit button and the play button.
+
+### <h3 id="typography">Typography</h3>
+I will first experiment the playful "Mistery Quest" Google Font for heading paired with the contrasting sans-serif "Roboto" for everything else.
 
 ### <h3 id="colours">Colour Scheme</h3>
 As the game in its final form would ideally include the images of a sleeping dragon and a locked treasure chest, for the MVP I chose a colour pallette inspired by these images: "dragon-green"= #0B870D, "chest-brown"= #46211C, "treasure-gold"= #FFD700, and "contrast-red"= #FF0000. It's very likely that I will change the colours on the way, but it's something to start with.
