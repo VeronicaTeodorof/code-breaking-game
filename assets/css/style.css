@@ -7,8 +7,9 @@
     --primary-font: "Roboto", sans-serif;
     --dragon-green: #0B870D;
     --chest-brown: #46211C;
-    --treasure-gold: #FFD700;
-    --contrast-red:  #FF0000;
+    --treasure-yellow: #FFD700;
+    --evergreen: #003326;
+    --prussian-blue: #020122;
 }
 
 /* Global styles */
@@ -17,13 +18,13 @@ body {
 }
 h1 {
     font-family: var(--heading-font);
-    color: yellow;
-    background-color:#003326;
+    color: var(--treasure-yellow);
+    background-color: var(--evergreen);
     text-shadow: 4px 4px var(--chest-brown);
     text-align: center;
     letter-spacing: 0.2rem;
-    border: 2px solid #020122;
-    box-shadow: 3px 5px #020122;
+    border: 2px solid var(--prussian-blue);
+    box-shadow: 3px 5px var(--prussian-blue);
     border-radius: 10%;
     padding: 0.5rem;
 }
