@@ -24,7 +24,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 
 ### <a href="#technologies">4. Technologies Used</a>
 - <a href="#languages">Languages Used</a>
-- Frameworks, Libraries & Programs Used
+- <a href="#frameworks">Frameworks, Libraries & Programs Used</a>
 
 ### <a href="#deployment-and-development">5. Deployment and Local Development</a>
 - <a href="#deployment">Deployment</a>
@@ -106,6 +106,14 @@ As the game in its final form would ideally include the images of a sleeping dra
 ## <h2 id="technologies">4. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
 HTML has been used to shape the skeleton of the game page.
+
+### <h3 id="frameworks">Frameworks, Libraries & Programs Used</h3>
+
+Git - for version control;
+
+Github - to save and store the files for the game;
+
+https://coolors.co/ for creating the colour pallette;
 
 ## <h2 id="deployment-and-development">5. Deployment and Local Development
 ### <h3 id="deployment">Deployment</h3>
