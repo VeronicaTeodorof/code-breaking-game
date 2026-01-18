@@ -99,9 +99,11 @@ In the first phase there will be minimal features: a heading, a feedback section
 I will first experiment the playful "Mistery Quest" Google Font for heading paired with the contrasting sans-serif "Roboto" for everything else.
 
 ### <h3 id="colours">Colour Scheme</h3>
-As the game in its final form would ideally include the images of a sleeping dragon and a locked treasure chest, for the MVP I chose a colour pallette inspired by these images: "dragon-green"= #0B870D, "chest-brown"= #46211C, "treasure-gold"= #FFD700, and "contrast-red"= #FF0000. It's very likely that I will change the colours on the way, but it's something to start with.
+As the game in its final form would ideally include the images of a sleeping dragon and a locked treasure chest, for the MVP I chose a colour pallette inspired by these images: "dragon-green"= #0B870D, "chest-brown"= #46211C, "treasure-gold"= #FFD700, and "contrast-red"= #FF0000 ([see initial pallette here](readme-assets/first-phase/codebreaker-game-pallette.png)).
 
-<img src="readme-assets/first-phase/codebreaker-game-pallette.png">
+As there wasn't sufficient contrast between colours to have one for the text and one for the background, after checking contrast in Coolors ([see here](readme-assets/first-phase/contrast-check-heading.png)), I updated the colour pallette to:
+
+<img src="readme-assets/first-phase/codebreaking-game-pallette2.png">
 
 ### <h3 id="wireframes">Wireframes</h3>
 [First phase wireframes](readme-assets/first-phase/first-phase-wireframe.png)
