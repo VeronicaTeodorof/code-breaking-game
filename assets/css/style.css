@@ -19,10 +19,11 @@ body {
 
 h1 {
     font-family: var(--heading-font);
-}
-
-h2 {
-    font-family: var(--primary-font);
+     color: var(--treasure-yellow);
+    text-shadow: 4px 4px var(--chest-brown);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
 }
 
 .box {
@@ -32,14 +33,6 @@ h2 {
     border-radius: 10%;
 }
 
-
-h1, h2 {
-    color: var(--treasure-yellow);
-    text-shadow: 4px 4px var(--chest-brown);
-    text-align: center;
-    letter-spacing: 0.2rem;
-    padding: 0.5rem;
-}
 
 /* Feedback section */
 
