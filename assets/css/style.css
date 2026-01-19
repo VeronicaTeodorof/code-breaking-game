@@ -19,7 +19,7 @@ body {
 
 h1 {
     font-family: var(--heading-font);
-     color: var(--treasure-yellow);
+    color: var(--treasure-yellow);
     text-shadow: 4px 4px var(--chest-brown);
     text-align: center;
     letter-spacing: 0.2rem;
@@ -41,5 +41,29 @@ h1 {
 
 .guess {
     border: 2px solid var(--prussian-blue);
+}
+
+/* Play section */
+form {
+    text-align: center;
+}
+
+.input {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--evergreen);
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 10px;
+   
+}
+
+input[type="submit"] {
+    background-color: var(--chest-brown);
+    color: var(--treasure-yellow);
+    font-family: var(--primary-font);
+    margin-top: 5px;
+    font-size: medium;
 }
 
