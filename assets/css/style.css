@@ -37,6 +37,8 @@ h1 {
 /* Feedback section */
 #feedback {
     margin: 0 20px;
+    background-color: var(--chest-brown);
+    border: 2px solid var(--prussian-blue);
 }
 
 .guess {
@@ -60,10 +62,28 @@ form {
 }
 
 input[type="submit"] {
-    background-color: var(--chest-brown);
+    background-color: var(--evergreen);
     color: var(--treasure-yellow);
     font-family: var(--primary-font);
     margin-top: 5px;
     font-size: medium;
+}
+
+/* Play button */
+#play-button {
+    font-family: var(--heading-font);
+    color: var(--treasure-yellow);
+    font-size:xx-large;
+    letter-spacing: 0.3rem;
+    text-shadow: 4px 4px var(--chest-brown);
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 10%;
+    box-shadow: 3px 5px var(--prussian-blue);
+    min-width: 120px;
+}
+
+#play-button-div {
+    text-align: center;
 }
 
