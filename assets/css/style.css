@@ -24,18 +24,22 @@ h1 {
     text-align: center;
     letter-spacing: 0.2rem;
     padding: 0.5rem;
+    border-radius: 10%;
+    box-shadow: 3px 5px var(--prussian-blue);
 }
 
 .box {
     background-color: var(--evergreen);
     border: 2px solid var(--prussian-blue);
-    box-shadow: 3px 5px var(--prussian-blue);
-    border-radius: 10%;
 }
 
 
 /* Feedback section */
+#feedback {
+    margin: 0 20px;
+}
 
 .guess {
     border: 2px solid var(--prussian-blue);
 }
+
