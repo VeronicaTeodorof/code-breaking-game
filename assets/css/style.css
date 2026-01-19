@@ -26,6 +26,9 @@ h1 {
     padding: 0.5rem;
     border-radius: 10%;
     box-shadow: 3px 5px var(--prussian-blue);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .box {
