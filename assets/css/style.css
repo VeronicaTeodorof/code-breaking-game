@@ -29,7 +29,7 @@ h1 {
 }
 
 .box {
-    background-color: var(--evergreen);
+    background-color: var(--chest-brown);
     border: 2px solid var(--prussian-blue);
 }
 
@@ -37,7 +37,7 @@ h1 {
 /* Feedback section */
 #feedback {
     margin: 0 20px;
-    background-color: var(--chest-brown);
+    background-color: var(--evergreen);
     border: 2px solid var(--prussian-blue);
 }
 
@@ -73,16 +73,22 @@ input[type="submit"] {
 #play-button {
     font-family: var(--heading-font);
     color: var(--treasure-yellow);
-    font-size:xx-large;
+    font-size: xx-large;
     letter-spacing: 0.3rem;
     text-shadow: 4px 4px var(--chest-brown);
     padding: 0.5rem;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 10%;
     box-shadow: 3px 5px var(--prussian-blue);
     min-width: 120px;
 }
+#play-button:hover {
+    color: var(--chest-brown);
+    background-color: var(--treasure-yellow);
+    text-shadow: none;
+    font-weight: bold;
 
+}
 #play-button-div {
     text-align: center;
 }
