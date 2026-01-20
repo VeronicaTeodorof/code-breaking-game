@@ -39,7 +39,6 @@ h1 {
 /* Feedback section */
 #feedback {
     margin:auto;
-    background-color: var(--evergreen);
     border: 2px solid var(--prussian-blue);
     max-width: 264px;
 
@@ -47,6 +46,7 @@ h1 {
 
 .guess {
     border: 2px solid var(--prussian-blue);
+    background-color: var(--evergreen);
 }
 
 /* Play section */
@@ -108,5 +108,30 @@ input[type="submit"] {
         max-width: 320px;
         font-size: 3rem;
     }
+
+    /* Feedback section */
+    #feedback {
+        border: none;
+        margin: auto;
+        max-width: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .guess {
+        margin-top: 10px;
+        height: 30px;
+
+    }
+
+    .container {
+       width: 264px;
+    }
+
+    #first-column {
+        margin-right: 30px;
+        
+
+
 }
 
