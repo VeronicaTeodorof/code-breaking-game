@@ -79,7 +79,6 @@ input[type="submit"] {
     color: var(--treasure-yellow);
     font-size: xx-large;
     letter-spacing: 0.3rem;
-    text-shadow: 4px 4px var(--chest-brown);
     padding: 0.5rem;
     margin-top: 20px;
     border-radius: 10%;
@@ -131,7 +130,19 @@ input[type="submit"] {
     #first-column {
         margin-right: 30px;
         
+    }
 
+    /* Play section */
+    input {
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    input[type="submit"] {
+         width: 70px;
+         height: 30px;
+    }
 
 }
 
