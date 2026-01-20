@@ -39,9 +39,11 @@ h1 {
 
 /* Feedback section */
 #feedback {
-    margin: 0 20px;
+    margin:auto;
     background-color: var(--evergreen);
     border: 2px solid var(--prussian-blue);
+    max-width: 264px;
+
 }
 
 .guess {
