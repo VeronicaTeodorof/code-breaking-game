@@ -36,7 +36,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Known Bugs
 - <a href="#w3c">W3C Validation</a>
 - JavaScript Validation
-- Lighthouse
+- <a href="lighthouse">Lighthouse</a>
 - Behaviour Driven Development and Testing User Stories
 - Test Driven Development
 
@@ -141,12 +141,14 @@ Instructions on how to achieve this can be found below:
 ### <h3 id="w3c">W3C Validation</h3>
 First phase:
 
-Initial validation of the HTML boilerplate shows two errors: [initial HTML boilerplate validation](readme-assets/first-phase/W3C-initial-test-HTMLboilerplate.png)
+Initial validation of the HTML boilerplate shows two errors: [initial HTML boilerplate validation](readme-assets/first-phase/W3C-initial-test-HTMLboilerplate.png). The errors have been corrected and the HTML boilerplate has been validated: [validation of HTML boilerplate](readme-assets/first-phase/html-boilerplate-validated.png).
 
-Lesson learned: validate  and check before committing.
+After adding basic CSS styles and changing HTML accordingly, I tried to validate again. One error was showing: [HTML page validation after adding css](readme-assets/first-phase/html-after-css-initial-validation.png). The error has been corrected.
 
-The errors have been corrected and the HTML boilerplate has been validated: [validation of HTML boilerplate](readme-assets/first-phase/html-boilerplate-validated.png)
+Style.css page has also been validated with no errors found: [css initial validation](readme-assets/first-phase/css-initial-validation.png)
 
+### <h3 id="lighthouse">Lighthouse</h3>
+Initial lighthouse tests show some areas that can be improved in terms of accessibility and SEO. Here are the screenshots for initial tests: [initial lighthouse for mobile](readme-assets/first-phase/lighthouse-for-mobile-initial.png), [initial lighthouse for desktop](readme-assets/first-phase/lighthouse-for-desktop-initial.png), [accessibility](readme-assets/first-phase/accessibility-initial.png) and [SEO](readme-assets/first-phase/seo-initial.png).
 
 ## <h2 id="credits2">7. Credits</h2>
 ### <h3 id="documentation">Documentation</h3>
