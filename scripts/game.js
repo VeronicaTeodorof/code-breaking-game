@@ -1,5 +1,5 @@
 function newGame() {
-
+    generateCode();
 }
 
 /*  Generates a 4 digit random code:
@@ -23,6 +23,34 @@ function generateDigit() {
     return digit;
 }
 
+/* Write a function that modifies the content of the html page
+after the computer code is generated.
+The function should: 
+- change the text of play button to quit;
+- remove heading1;
+- add heading2;
+- add message: "Enter code here:"
+ */
+
+function changeHtml() {
+
+}
+
+function changePlayToQuit() {
+
+}
+
+function removeH1() {
+
+}
+
+function addH2() {
+
+}
+
+function displayEnterCode() {
+
+}
 
 
 
