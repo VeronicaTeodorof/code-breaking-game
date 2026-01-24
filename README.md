@@ -22,15 +22,17 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#colours">Colour Scheme</a>
 - <a href="#wireframes">Wireframes</a>
 
-### <a href="#technologies">4. Technologies Used</a>
+### <a href="#functionality">4. Functionality
+
+### <a href="#technologies">5. Technologies Used</a>
 - <a href="#languages">Languages Used</a>
 - <a href="#frameworks">Frameworks, Libraries & Programs Used</a>
 
-### <a href="#deployment-and-development">5. Deployment and Local Development</a>
+### <a href="#deployment-and-development">6. Deployment and Local Development</a>
 - <a href="#deployment">Deployment</a>
 - Local Development
 
-### <a href="#testing">6. Testing</a>
+### <a href="#testing">7. Testing</a>
 - Full Testing
 - Solved Bugs 
 - Known Bugs
@@ -40,7 +42,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Behaviour Driven Development and Testing User Stories
 - Test Driven Development
 
-### 7. Credits
+### 8. Credits
 - Code Used
 - Content
 - Media
@@ -108,7 +110,10 @@ As there wasn't sufficient contrast between colours to have one for the text and
 ### <h3 id="wireframes">Wireframes</h3>
 [First phase wireframes](readme-assets/first-phase/first-phase-wireframe.png)
 
-## <h2 id="technologies">4. Technologies Used</h2>
+## <h2 id="functionality">4. Functionality</h2>
+To see the picture of how the basic game would work I designed a [flowchart](readme-assets/first-phase/flowchart.pdf). Then I sketched the basic js [structure](readme-assets/first-phase/js-structure.png).
+
+## <h2 id="technologies">5. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
 HTML has been used to shape the skeleton of the game page.
 CSS has been used to style the page.
@@ -123,7 +128,7 @@ Google Fonts - for the fonts used in the game;
 
 https://coolors.co/ for creating the colour pallette;
 
-## <h2 id="deployment-and-development">5. Deployment and Local Development
+## <h2 id="deployment-and-development">6. Deployment and Local Development
 ### <h3 id="deployment">Deployment</h3>
 
 The live website was deployed using GitHub Pages at: <a href="https://veronicateodorof.github.io/code-breaking-game/">https://veronicateodorof.github.io/code-breaking-game/</a> 
@@ -137,7 +142,7 @@ Instructions on how to achieve this can be found below:
 5. Under the Build and deployment header, in the Source section, select main branch from the dropdown menu. Make sure Root is selected in the dropdown select folder menu.
 6. Click Save. The live GitHub Pages website is now deployed at the URL shown.
 
-## <h2 id="testing">6. Testing</h2>
+## <h2 id="testing">7. Testing</h2>
 ### <h3 id="w3c">W3C Validation</h3>
 First phase:
 
