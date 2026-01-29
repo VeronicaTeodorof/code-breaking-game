@@ -1,10 +1,16 @@
 let playButton = document.getElementById("play-button");
 playButton.addEventListener("click", changeButton);
+playButton.addEventListener("click", enterCodeMessage);
 
 // Change the text of the play button
 function changeButton() {
     playButton.innerText = "Quit";
-}
+};
+
+function enterCodeMessage() {
+    messageEnterCode = document.getElementById("message");
+    messageEnterCode.innerHTML = "<h2>Enter code here:</h2>";
+};
 
 
 
