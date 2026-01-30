@@ -1,6 +1,8 @@
 let playButton = document.getElementById("play-button");
 playButton.addEventListener("click", changeButton);
 playButton.addEventListener("click", enterCodeMessage);
+playButton.addEventListener("click", cursorReady);
+
 
 // Change the text of the play button
 function changeButton() {
@@ -11,6 +13,11 @@ function enterCodeMessage() {
     messageEnterCode = document.getElementById("message");
     messageEnterCode.innerHTML = "<h2>Enter code here:</h2>";
 };
+
+// Sets the cursor ready for the user to type the first input
+function cursorReady() {
+    document.getElementById("input1").focus();
+}
 
 
 
