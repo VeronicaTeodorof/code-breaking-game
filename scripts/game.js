@@ -7,21 +7,27 @@ playButton.addEventListener("click", cursorReady);
 // Change the text of the play button
 function changeButton() {
     playButton.innerText = "Quit";
-};
+}
 
 function enterCodeMessage() {
     messageEnterCode = document.getElementById("message");
     messageEnterCode.innerHTML = "<h2>Enter code here:</h2>";
-};
+}
 
 // Sets the cursor ready for the user to type the first input
 function cursorReady() {
     document.getElementById("input1").focus();
 }
 
-
-
-
+// Moves cursor to the next input after the user enters a value
+function moveFocus() {
+    let inputBoxes = document.querySelectorAll(".input");
+    
+    for(let i = 0; i < inputBoxes.length; i++) {
+        inputBoxes[i].addEventListener("input", () => inputBoxes[i+1].focus());
+    }
+}
+moveFocus();
 
 // Generates a 4 digit random code:
 function generateCode() {
