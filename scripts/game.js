@@ -55,5 +55,15 @@ document.addEventListener("DOMContentLoaded", function() {
     function showData(e) {
         e.preventDefault();
         myForm = e.target;
+
+        let input1 = parseInt(myForm.input1.value);
+        let input2 = parseInt(myForm.input2.value);
+        let input3 = parseInt(myForm.input3.value);
+        let input4 = parseInt(myForm.input4.value);
+
+        let guessCode = [input1, input2, input3, input4];
+        
+        console.log(guessCode);
     }
+
 });
