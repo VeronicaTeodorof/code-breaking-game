@@ -19,11 +19,11 @@ function cursorReady() {
     document.getElementById("input1").focus();
 }
 
-// Moves cursor to the next input after the user enters a value
+// Moves cursor to the next input after user enters a value
 function moveFocus() {
     let inputBoxes = document.querySelectorAll(".input");
     
-    for(let i = 0; i < inputBoxes.length; i++) {
+    for(let i = 0; i < inputBoxes.length - 1; i++) {
         inputBoxes[i].addEventListener("input", () => inputBoxes[i+1].focus());
     }
 }
@@ -48,12 +48,11 @@ function generateDigit() {
     return digit;
 }
 
-
-function validateInput() {
-
-}
-
 function checkAnswer() {
 
+   
+
 }
+
+checkAnswer();
 
