@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     const playButton = document.getElementById("play-button");
-    const form = document.getElementById("guess-form");
-
+   
     // Add event listeners
     playButton.addEventListener("click", changeButton);
     playButton.addEventListener("click", enterCodeMessage);
     playButton.addEventListener("click", cursorReady);
 
-    form.addEventListener("submit", (e) => e.preventDefault());
+    document.querySelector("form").addEventListener("submit", showData);
 
     // Change the text of the play button
     function changeButton() {
@@ -51,5 +50,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function generateDigit() {
         let digit = Math.floor(Math.random() * 10);
         return digit;
+    }
+
+    function showData(e) {
+        e.preventDefault();
+        myForm = e.target;
     }
 });
