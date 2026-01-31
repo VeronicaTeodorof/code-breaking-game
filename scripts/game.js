@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const playButton = document.getElementById("play-button");
+    const form = document.getElementById("guess-form");
 
     // Add event listeners
     playButton.addEventListener("click", changeButton);
     playButton.addEventListener("click", enterCodeMessage);
     playButton.addEventListener("click", cursorReady);
+
+    form.addEventListener("submit", (e) => e.preventDefault());
 
     // Change the text of the play button
     function changeButton() {
