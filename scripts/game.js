@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const game = {
-        computerCode: [],
-        guessCode: []
-    }
     const playButton = document.getElementById("play-button");
    
     // Add event listeners
@@ -46,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
         let digit4 = generateDigit();
 
         let computerCode = [digit1, digit2, digit3, digit4];
-        computerCode.forEach(game.computerCode.push());
         console.log(computerCode);
     };
 
@@ -67,10 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
         let input4 = parseInt(myForm.input4.value);
 
         let guessCode = [input1, input2, input3, input4];
-        guessCode.forEach(game.guessCode.push());
         console.log(guessCode);
     }
-    console.log(game.computerCode);
-    console.log(game.guessCode);
 
 });
+
