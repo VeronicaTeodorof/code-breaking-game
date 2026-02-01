@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let computerCode = [digit1, digit2, digit3, digit4];
         console.log(computerCode);
+        return computerCode;
     };
 
     generateCode();
@@ -67,8 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
+            } else {
+                let para = document.querySelector(".guess-paragraph");
+                para.innerText = `${guessCode}`;
             }
         }
+        
     }
 
 });
