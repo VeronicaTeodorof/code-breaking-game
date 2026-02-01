@@ -63,6 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let guessCode = [input1, input2, input3, input4];
         console.log(guessCode);
+        
+        for(let input of guessCode) {
+            if(input > 9 || input < 0) {
+                alert("Please only enter one digit integers from 0 to 9 included");
+            }
+        }
     }
 
 });
