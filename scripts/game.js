@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const playButton = document.getElementById("play-button");
+    let computerCode = generateCode();
    
     // Add event listeners
     playButton.addEventListener("click", changeButton);
@@ -46,7 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
         return computerCode;
     };
 
-    generateCode();
+    // generateCode();
+
     // Generates a random digit
     function generateDigit() {
         let digit = Math.floor(Math.random() * 10);
@@ -61,18 +63,31 @@ document.addEventListener("DOMContentLoaded", function() {
         let input2 = parseInt(myForm.input2.value);
         let input3 = parseInt(myForm.input3.value);
         let input4 = parseInt(myForm.input4.value);
-
         let guessCode = [input1, input2, input3, input4];
         console.log(guessCode);
+
+        
         
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
             } else {
                 let para = document.querySelector(".guess-paragraph");
-                para.innerText = `${guessCode}`;
-                myForm.reset();
+                para.innerText = `${guessCode}`;  // Writes guessCode in feedback area
+                checkAnswer();
+                myForm.reset(); // Empties input fields without refreshing the page
             }
+        }
+
+        function checkAnswer() {
+            let numCorrect = 0;
+            for(let i = 0; i < guessCode.length; i++) {
+                if(guessCode[i] === computerCode[i]) {
+                    numCorrect++;
+                }
+            }
+            console.log(numCorrect);
+        
         }
         
     }
