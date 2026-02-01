@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 let para = document.querySelector(".guess-paragraph");
                 para.innerText = `${guessCode}`;
+                myForm.reset();
             }
         }
         
