@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const playButton = document.getElementById("play-button");
     let computerCode = generateCode();
-   
+    
     // Add event listeners
     playButton.addEventListener("click", changeButton);
     playButton.addEventListener("click", enterCodeMessage);
@@ -81,14 +81,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
         function checkAnswer() {
             let numCorrect = 0;
-            for(let i = 0; i < guessCode.length; i++) {
-                if(guessCode[i] === computerCode[i]) {
+            let splicedComputerCode;
+            let splicedGuessCode;
+
+            // Code to find numCorrect
+            // for(let i = 0; i < guessCode.length; i++) {
+            //     if(guessCode[i] === computerCode[i]) {
+            //         numCorrect++;
+            //         if(numCorrect === 4) { 
+            //             alert("You guessed!");
+            //     }
+            // }
+            // console.log(numCorrect);
+            
+
+            // Hard code for removing mathcing pairs from their respective arrays when all 4 digits are guessed
+            if(computerCode[0] === guessCode[0]) {
+                numCorrect++;
+                splicedComputerCode = computerCode.toSpliced(0, 1);
+                splicedGuessCode = guessCode.toSpliced(0, 1);
+                if(computerCode[1] === guessCode[1]) {
                     numCorrect++;
+                    splicedComputerCode = splicedComputerCode.toSpliced(0, 1);
+                    splicedGuessCode = splicedGuessCode.toSpliced(0, 1);
+                    if(computerCode[2] === guessCode[2]) {
+                        numCorrect++;
+                        splicedComputerCode = splicedComputerCode.toSpliced(0, 1);
+                        splicedGuessCode =splicedGuessCode.toSpliced(0,1);
+                        if(computerCode[3] === guessCode[3]) {
+                            numCorrect++;
+                            splicedComputerCode = splicedComputerCode.toSpliced(0, 1);
+                            splicedGuessCode = splicedGuessCode.toSpliced(0, 1);
+                        }
+                    }
                 }
-            }
+            } 
             console.log(numCorrect);
-        
+            console.log(splicedComputerCode);
+            console.log(splicedGuessCode);
         }
+        
+        
         
     }
 
