@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         function checkAnswer() {
             let numCorrect = 0;
+            let numIncorrectlyPlaced = 0;
+            let numIncorrect = 0;
             let splicedGuessCode = [];
             let splicedComputerCode = [];
             
@@ -98,10 +100,29 @@ document.addEventListener("DOMContentLoaded", function() {
                     splicedComputerCode.push(computerCode[i]);
                 }
             }
+            
+            // Code to calculate numbers incorrectly placed and numbers incorrect
+            for(let j = 0; j < splicedGuessCode.length; j++) {
+                if(splicedComputerCode.includes(splicedGuessCode[j])) {
+                    numIncorrectlyPlaced++;
+
+                    let index = splicedComputerCode.indexOf(splicedGuessCode[j]); 
+                    splicedComputerCode.splice(index, 1);
+                    splicedGuessCode.splice(j, 1);
+                    j--; // When one element is removed, the index of the following element decreases by 1
+                } else {
+                    numIncorrect++;
+                }
+            }
+
+            
             console.log(numCorrect);
+            console.log(numIncorrectlyPlaced);
+            console.log(numIncorrect);
             console.log(splicedGuessCode);
             console.log(splicedComputerCode);
             console.log(guessCode);
+            console.log(computerCode);
            
            
             
