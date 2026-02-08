@@ -84,12 +84,18 @@ document.addEventListener("DOMContentLoaded", function() {
             let numIncorrect = 0;
             let splicedGuessCode = [];
             let splicedComputerCode = [];
+            let blackDot = ".";
+            let whiteDot = ".";
+            let redX = "X";
+            let feedback = document.querySelector(".feedback-span");
+            // feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
             
 
             //Code to find numCorrect
             for(let i = 0; i < guessCode.length; i++) {
                 if(guessCode[i] === computerCode[i]) {
                     numCorrect++;
+                    feedback.innerText = blackDot.repeat(numCorrect);
                     if(numCorrect === 4) { 
                         alert("You guessed!");
                     }
@@ -105,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
             for(let j = 0; j < splicedGuessCode.length; j++) {
                 if(splicedComputerCode.includes(splicedGuessCode[j])) {
                     numIncorrectlyPlaced++;
+                    feedback.innerText = whiteDot.repeat(numIncorrectlyPlaced);
 
                     let index = splicedComputerCode.indexOf(splicedGuessCode[j]); 
                     splicedComputerCode.splice(index, 1);
@@ -112,8 +119,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     j--; // When one element is removed, the index of the following element decreases by 1
                 } else {
                     numIncorrect++;
+                    feedback.innerText = redX.repeat(numIncorrect);
                 }
             }
+
+            
+               
+               
+            
+            
+            
+
+            
 
             
             console.log(numCorrect);
@@ -123,38 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(splicedComputerCode);
             console.log(guessCode);
             console.log(computerCode);
-           
-           
-            
-
-            // Hard code for removing mathcing pairs from their respective arrays when all 4 digits are guessed
-            // if(computerCode[0] === guessCode[0]) {
-            //     numCorrect++;
-            //     splicedComputerCode = computerCode.toSpliced(0, 1);
-            //     splicedGuessCode = guessCode.toSpliced(0, 1);
-            //     if(computerCode[1] === guessCode[1]) {
-            //         numCorrect++;
-            //         splicedComputerCode = splicedComputerCode.toSpliced(0, 1);
-            //         splicedGuessCode = splicedGuessCode.toSpliced(0, 1);
-            //         if(computerCode[2] === guessCode[2]) {
-            //             numCorrect++;
-            //             splicedComputerCode = splicedComputerCode.toSpliced(0, 1);
-            //             splicedGuessCode =splicedGuessCode.toSpliced(0,1);
-            //             if(computerCode[3] === guessCode[3]) {
-            //                 numCorrect++;
-            //                 splicedComputerCode = splicedComputerCode.toSpliced(0, 1);
-            //                 splicedGuessCode = splicedGuessCode.toSpliced(0, 1);
-            //             }
-            //         }
-            //     }
-
-            // }
-            
         }
-        
-        
-        
     }
-
 });
 
