@@ -84,18 +84,13 @@ document.addEventListener("DOMContentLoaded", function() {
             let numIncorrect = 0;
             let splicedGuessCode = [];
             let splicedComputerCode = [];
-            let blackDot = ".";
-            let whiteDot = ".";
-            let redX = "X";
-            let feedback = document.querySelector(".feedback-span");
-            // feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
             
 
             //Code to find numCorrect
             for(let i = 0; i < guessCode.length; i++) {
                 if(guessCode[i] === computerCode[i]) {
                     numCorrect++;
-                    feedback.innerText = blackDot.repeat(numCorrect);
+                    // feedback.innerText = blackDot.repeat(numCorrect);
                     if(numCorrect === 4) { 
                         alert("You guessed!");
                     }
@@ -111,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
             for(let j = 0; j < splicedGuessCode.length; j++) {
                 if(splicedComputerCode.includes(splicedGuessCode[j])) {
                     numIncorrectlyPlaced++;
-                    feedback.innerText = whiteDot.repeat(numIncorrectlyPlaced);
+                    // feedback.innerText = whiteDot.repeat(numIncorrectlyPlaced);
 
                     let index = splicedComputerCode.indexOf(splicedGuessCode[j]); 
                     splicedComputerCode.splice(index, 1);
@@ -119,11 +114,20 @@ document.addEventListener("DOMContentLoaded", function() {
                     j--; // When one element is removed, the index of the following element decreases by 1
                 } else {
                     numIncorrect++;
-                    feedback.innerText = redX.repeat(numIncorrect);
+                    // feedback.innerText = redX.repeat(numIncorrect);
                 }
             }
 
-            
+            function giveFeedback() {
+                let blackDot = ".";
+                let whiteDot = ".";
+                let redX = "X";
+                let feedback = document.querySelector(".feedback-span");
+                feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
+                return feedback;
+            }
+
+            return giveFeedback();
                
                
             
@@ -143,4 +147,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
-
