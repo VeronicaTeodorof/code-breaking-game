@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     const playButton = document.getElementById("play-button");
+    const submitButton = document.getElementById("submit");
     let computerCode = generateCode();
     
     // Add event listeners
     playButton.addEventListener("click", changeButton);
     playButton.addEventListener("click", enterCodeMessage);
     playButton.addEventListener("click", cursorReady);
-
+    submitButton.addEventListener("click", cursorReady);
+  
     document.querySelector("form").addEventListener("submit", showData);
 
     // Change the text of the play button
@@ -64,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let input4 = parseInt(myForm.input4.value);
         let guessCode = [input1, input2, input3, input4];
         console.log(guessCode);
+        let k; // declare k variable that will be assigned a number equal to the number of iterations;
 
         
         
@@ -71,10 +74,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
             } else {
-                let para = document.querySelector(".guess-paragraph");
-                para.innerText = `${guessCode}`;  // Writes guessCode in feedback area
+                let spanGuess = document.querySelector(".guess-span");
+                spanGuess.innerText = `${guessCode}`;  // Writes guessCode in feedback area
                 checkAnswer();
                 myForm.reset(); // Empties input fields without refreshing the page
+                
             }
         }
 
@@ -90,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
             for(let i = 0; i < guessCode.length; i++) {
                 if(guessCode[i] === computerCode[i]) {
                     numCorrect++;
-                    // feedback.innerText = blackDot.repeat(numCorrect);
                     if(numCorrect === 4) { 
                         alert("You guessed!");
                     }
@@ -106,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
             for(let j = 0; j < splicedGuessCode.length; j++) {
                 if(splicedComputerCode.includes(splicedGuessCode[j])) {
                     numIncorrectlyPlaced++;
-                    // feedback.innerText = whiteDot.repeat(numIncorrectlyPlaced);
 
                     let index = splicedComputerCode.indexOf(splicedGuessCode[j]); 
                     splicedComputerCode.splice(index, 1);
@@ -114,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     j--; // When one element is removed, the index of the following element decreases by 1
                 } else {
                     numIncorrect++;
-                    // feedback.innerText = redX.repeat(numIncorrect);
                 }
             }
 
