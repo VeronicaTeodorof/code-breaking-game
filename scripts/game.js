@@ -65,12 +65,15 @@ document.addEventListener("DOMContentLoaded", function() {
         let input3 = parseInt(myForm.input3.value);
         let input4 = parseInt(myForm.input4.value);
         let guessCode = [input1, input2, input3, input4];
+        let validInput;
         console.log(guessCode);
         
 
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
+                throw new RangeError("The digit entered must be between 0 and 9.");
+                
             } 
         }
 
