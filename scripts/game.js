@@ -66,21 +66,22 @@ document.addEventListener("DOMContentLoaded", function() {
         let input4 = parseInt(myForm.input4.value);
         let guessCode = [input1, input2, input3, input4];
         console.log(guessCode);
-        let k; // declare k variable that will be assigned a number equal to the number of iterations;
+        
 
-        
-        
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
-            } else {
-                let spanGuess = document.querySelector(".guess-span");
-                spanGuess.innerText = `${guessCode}`;  // Writes guessCode in feedback area
-                checkAnswer();
-                myForm.reset(); // Empties input fields without refreshing the page
-                
-            }
+            } 
         }
+
+        let spanGuess = document.querySelector(".guess-span");
+        spanGuess.innerText = `${guessCode}`;  // Writes guessCode in feedback area
+        spanGuess.classList.remove("guess-span");
+        checkAnswer();
+        myForm.reset(); // Empties input fields without refreshing the page
+                
+            
+        
 
         function checkAnswer() {
             let numCorrect = 0;
@@ -91,17 +92,17 @@ document.addEventListener("DOMContentLoaded", function() {
             
 
             //Code to find numCorrect
-            for(let i = 0; i < guessCode.length; i++) {
-                if(guessCode[i] === computerCode[i]) {
+            for(let k = 0; k < guessCode.length; k++) {
+                if(guessCode[k] === computerCode[k]) {
                     numCorrect++;
                     if(numCorrect === 4) { 
                         alert("You guessed!");
                     }
                 } else {
                     // Creates a copy of guessCode with digits correctly guessed removed;
-                    splicedGuessCode.push(guessCode[i]); 
+                    splicedGuessCode.push(guessCode[k]); 
                     // Creates a copy of computerCode with digits correctly guessed removed;
-                    splicedComputerCode.push(computerCode[i]);
+                    splicedComputerCode.push(computerCode[k]);
                 }
             }
             
@@ -121,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             function giveFeedback() {
                 let blackDot = ".";
-                let whiteDot = ".";
+                let whiteDot = ",";
                 let redX = "X";
                 let feedback = document.querySelector(".feedback-span");
                 feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
