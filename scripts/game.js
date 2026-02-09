@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let redX = "X";
                 let feedback = document.querySelector(".feedback-span");
                 feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
+                feedback.classList.remove("feedback-span");
                 return feedback;
             }
 
