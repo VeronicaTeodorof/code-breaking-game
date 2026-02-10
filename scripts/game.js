@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
-                throw new RangeError("The digit entered must be between 0 and 9.");
+                throw new RangeError("The digit entered must be between 0 and 9."); //stops the code from running when input out of range
                 
             } 
         }
@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     numCorrect++;
                     if(numCorrect === 4) { 
                         alert("You guessed!");
+                        throw new Error ("This is not an error. This is just to stop the execution of the nex part of code");
                     }
                 } else {
                     // Creates a copy of guessCode with digits correctly guessed removed;
