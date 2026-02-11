@@ -52,8 +52,22 @@ h2 {
 }
 
 .guess {
-    border: 2px solid var(--prussian-blue);
-    background-color: var(--evergreen);
+    border: 3px solid var(--prussian-blue);
+    background-color: #648b5c;
+}
+
+.visible-text {
+    color: var(--prussian-blue);
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: var(--primary-font);
+    padding-left: 10px;
+}
+
+.float-right {
+    float: right;
+    padding-right: 10px;
+    padding-top: 4px;
 }
 
 
@@ -70,6 +84,11 @@ form {
     border-radius: 5%;
     margin: auto;
     margin-top: 10px;
+    color: var(--chest-brown);
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    font-family: var(--primary-font);
    
 }
 

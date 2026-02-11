@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
 
         let spanGuess = document.querySelector(".guess-span");
-        spanGuess.innerText = `${guessCode}`;  // Writes guessCode in feedback area
+        spanGuess.innerText = `${input1} ${input2} ${input3} ${input4}`;  // Writes guessCode in feedback area
         spanGuess.classList.remove("guess-span"); // Removes class from filled div so that the following guess code goes to next available div
         checkAnswer();
         myForm.reset(); // Empties input fields without refreshing the page
@@ -126,9 +126,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             function giveFeedback() {
-                let blackDot = "⚫";
-                let whiteDot = "⚪";
-                let redX = "❌";
+                let blackDot = "⚫ ";
+                let whiteDot = "⚪ ";
+                let redX = "❌ ";
                 let feedback = document.querySelector(".feedback-span");
                 feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
                 feedback.classList.remove("feedback-span");
