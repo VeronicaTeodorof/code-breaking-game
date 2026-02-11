@@ -60,15 +60,15 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         myForm = e.target;
 
+        // Retrieve values entered by player
         let input1 = parseInt(myForm.input1.value);
         let input2 = parseInt(myForm.input2.value);
         let input3 = parseInt(myForm.input3.value);
         let input4 = parseInt(myForm.input4.value);
         let guessCode = [input1, input2, input3, input4];
-        let validInput;
         console.log(guessCode);
         
-
+        // Validates input values are in the 0 - 9 range
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
                 alert("Please only enter one digit integers from 0 to 9 included");
@@ -76,10 +76,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 
             } 
         }
+        
 
         let spanGuess = document.querySelector(".guess-span");
         spanGuess.innerText = `${guessCode}`;  // Writes guessCode in feedback area
-        spanGuess.classList.remove("guess-span");
+        spanGuess.classList.remove("guess-span"); // Removes class from filled div so that the following guess code goes to next available div
         checkAnswer();
         myForm.reset(); // Empties input fields without refreshing the page
                 
