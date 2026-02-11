@@ -126,13 +126,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             function giveFeedback() {
-                let blackDot = ".";
-                let whiteDot = ",";
-                let redX = "X";
+                let blackDot = "⚫";
+                let whiteDot = "⚪";
+                let redX = "❌";
                 let feedback = document.querySelector(".feedback-span");
                 feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
                 feedback.classList.remove("feedback-span");
-                if(feedback.classList.contains("last") && feedback.innerText !== "....") {
+                if(feedback.classList.contains("last") && feedback.innerText !== "⚫⚫⚫⚫") {
                     alert(`Game over! The code was: ${computerCode}.`);
                 }
                 return feedback;
