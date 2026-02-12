@@ -6,13 +6,16 @@
     <title>Codebreaking Game</title>
     <meta name="description" content="Codebreaking Game: can you crack the code in 10 tries? ">
 
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
     <!-- custom css -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1 class="box">Codebreaking Game</h1>
+        <h1 class="custom-box">Codebreaking Game</h1>
     </header>
 
     <!-- Main -->
@@ -20,14 +23,14 @@
 
         <!-- Feedback section -->
         <section id="feedback">
-            <div id="first-column" class="container">
+            <div id="first-column" class="custom-container">
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
             </div>
-            <div id="second-column" class="container">
+            <div id="second-column" class="custom-container">
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
@@ -53,9 +56,14 @@
     </main>
     <footer>
          <div id="play-button-div">
-            <button id="play-button" class="box">Play</button>
+            <button id="play-button" class="custom-box">Play</button>
          </div>
     </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS-->
     <script src="scripts/game.js"></script>
 </body>
 </html>
