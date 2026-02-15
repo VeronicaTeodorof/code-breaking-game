@@ -1,14 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const playButton = document.getElementById("play-button");
     const submitButton = document.getElementById("submit");
     let computerCode = generateCode();
+
+    cursorReady();
     
     // Add event listeners
-    playButton.addEventListener("click", changeButton);
-    playButton.addEventListener("click", enterCodeMessage);
-    playButton.addEventListener("click", cursorReady);
     submitButton.addEventListener("click", cursorReady);
-  
     document.querySelector("form").addEventListener("submit", showData);
 
     // Change the text of the play button
