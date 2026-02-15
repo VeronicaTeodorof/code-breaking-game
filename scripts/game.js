@@ -1,22 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.getElementById("submit");
+    const errorModal = document.getElementById("error-modal");
     let computerCode = generateCode();
 
     cursorReady();
     
     // Add event listeners
     submitButton.addEventListener("click", cursorReady);
+    document.addEventListener("click", closeModal); // Closes error modal when user clicks anywhere on the page
     document.querySelector("form").addEventListener("submit", showData);
-
-    // Change the text of the play button
-    function changeButton() {
-        playButton.innerText = "Quit";
-    }
-
-    function enterCodeMessage() {
-        messageEnterCode = document.getElementById("message");
-        messageEnterCode.innerHTML = "<h2>Enter code here:</h2>";
-    }
 
     // Sets the cursor ready for the user to type the first input
     function cursorReady() {
@@ -52,6 +44,19 @@ document.addEventListener("DOMContentLoaded", function() {
         let digit = Math.floor(Math.random() * 10);
         return digit;
     }
+    
+    // Makes error modal visible
+    function showError() {
+        errorModal.classList.remove("hidden");
+        errorModal.innerText = "Please enter a digit from 0 to 9"
+        return errorModal;
+    }
+    
+    // Makes error modal invisible
+    function closeModal() {
+        errorModal.classList.add("hidden");
+    }
+
 
     function showData(e) {
         e.preventDefault();
@@ -68,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Validates input values are in the 0 - 9 range
         for(let input of guessCode) {
             if(input > 9 || input < 0) {
-                alert("Please only enter one digit integers from 0 to 9 included");
+                showError();
                 throw new RangeError("The digit entered must be between 0 and 9."); //stops the code from running when input out of range
                 
             } 
