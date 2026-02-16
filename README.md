@@ -45,7 +45,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 ### 8. Credits
 - Code Used
 - Content
-- Media
+- <a href="#media">Media</a>
 - <a href="#documentation">Documentation</a>
 - Acknowledgements
 
@@ -159,3 +159,7 @@ Initial lighthouse tests show some areas that can be improved in terms of access
 ### <h3 id="documentation">Documentation</h3>
 
 While trying to understand what intuitive design for a game means, and what the acceptance criteria and tasks whould be in order to meet this user story, I realized that I need to add another user story, the one about input validation, because no player wants to be allowed to enter invalid data type, but they want to be warned about that, and easily correct the mistake. So this user story is written with the help of AI overview for "acceptance criteria for intuitive design of a game".
+
+### <h3 id="media">Media</h3>
+
+background image - Georgiana Romanovna (GeorgyGirl) on Pixabay

@@ -14,7 +14,11 @@
 
 /* Global styles */
 body {
-    background-color: var(--dragon-green);
+    /* background-color: var(--dragon-green); */
+    background-image: url("/assets/images/georgygirl-old-352478_640.jpg");
+    background-position-x: center;
+    
+   
 }
 
 h1 {
@@ -176,7 +180,7 @@ input[type="submit"] {
 
     /* Heading 1 */
     h1 {
-        margin-top: 30px;
+        margin-top: 80px;
         max-width: 320px;
         font-size: 3rem;
     }
