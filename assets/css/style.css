@@ -15,7 +15,7 @@
 /* Global styles */
 body {
     /* background-color: var(--dragon-green); */
-    background-image: url("/assets/images/background-image.jpg");
+    background: url('../images/background-image.webp');
     background-position-x: center;
     
    
