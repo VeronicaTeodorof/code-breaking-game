@@ -163,3 +163,4 @@ While trying to understand what intuitive design for a game means, and what the 
 ### <h3 id="media">Media</h3>
 
 background image - Georgiana Romanovna (GeorgyGirl) on Pixabay
+dragon sleeping - Annette (pendleburyannette) on Pixabay

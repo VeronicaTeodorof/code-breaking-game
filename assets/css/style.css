@@ -17,6 +17,7 @@ body {
     /* background-color: var(--dragon-green); */
     background: url('../images/background-image.webp');
     background-position-x: center;
+    /* overflow: hidden; */
     
    
 }
@@ -26,7 +27,7 @@ h1 {
     color: var(--treasure-yellow);
     font-weight: bold;
     text-align: center;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     padding: 0.5rem;
     border-radius: 10%;
     box-shadow: 3px 5px var(--prussian-blue);
@@ -49,6 +50,9 @@ h2 {
     border: 2px solid var(--prussian-blue);
 }
 
+/* Index Page */
+
+/* Game Page */
 /* UI Buttons */
 .buttons-container {
     display: flex;
@@ -150,6 +154,11 @@ input[type="submit"] {
     font-size: medium;
 }
 
+/* Images */
+#dragon-sleeping {
+    display: none;
+}
+
 /* Play button */
 #play-button {
     font-family: var(--heading-font);
@@ -180,7 +189,7 @@ input[type="submit"] {
 
     /* Heading 1 */
     h1 {
-        margin-top: 80px;
+        margin-top: 50px;
         max-width: 320px;
         font-size: 3rem;
     }
@@ -230,6 +239,17 @@ input[type="submit"] {
          min-width: 70px;
          min-height: 30px;
          margin-top: 10px;
+    }
+
+    /* Images */
+    #dragon-sleeping {
+        position:absolute;
+        top:300px;
+        right:200px;
+        display:flex;
+        /* float:inline-end; */
+       
+        
     }
 
 }
