@@ -20,13 +20,20 @@
 }
 
 /* Global styles */
-body {
-    /* background-color: var(--dragon-green); */
+/* body {
     background: url('../images/background-image.webp');
     background-position-x: center;
     overflow: hidden;
-    
-   
+} */
+
+header {
+    background-color: green;
+    height: 10vh;
+}
+
+main {
+    background-color: white;
+    height: 75vh;
 }
 
 h1 {
@@ -80,9 +87,11 @@ h2 {
 
 /* Feedback section */
 .feedback {
+    background-color:black;
     margin:auto;
     border: 2px solid var(--prussian-blue);
     max-width: 264px;
+    height: 50vh
 
 }
 
@@ -107,6 +116,10 @@ h2 {
 
 
 /* Play section */
+#play-area {
+    background-color: yellow;
+    height: 25vh;
+}
 
 .hidden {
     display: none;
@@ -167,6 +180,12 @@ input[type="submit"] {
 }
 #play-button-div {
     text-align: center;
+}
+
+/* Footer */
+.keyboard {
+    background-color: green;
+    height:15vh;
 }
 
 /* Media queries */

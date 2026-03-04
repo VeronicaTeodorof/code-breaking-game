@@ -7,21 +7,19 @@
     <meta name="description" content="Codebreaking Game: can you crack the code in 10 tries? ">
 
     <!-- Bootstrap css -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="container-fluid">
     <!-- Header -->
     <header>
-        <!-- <h1 class="custom-box">Codebreaking Game</h1> -->
-
         <!-- Buttons container -->
-        <div class="buttons-container">
+        <!-- <div class="buttons-container">
             <button class="game-button" id="instructions">❓</button>
             <button class="game-button" id="return-home">🏠</button>
-        </div>
+        </div> -->
     </header>
 
     <!-- Main -->
@@ -29,7 +27,7 @@
 
         <!-- Feedback section -->
         <section id="feedback" class="feedback">
-            <div id="first-column" class="custom-container left-container">
+            <!-- <div id="first-column" class="custom-container left-container">
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
@@ -42,7 +40,7 @@
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
                 <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span last float-right"></span></div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Play section -->
@@ -72,9 +70,12 @@
             </div>
 
         </section>
-        
-        
     </main>
+
+    <footer>
+        <section id="virtual-keyboard" class="keyboard">
+        </section>
+    </footer>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
