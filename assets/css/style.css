@@ -184,10 +184,18 @@ input[type="submit"] {
 
 /* Footer */
 .keyboard {
-    background-color: gray;
+    background-color: rgb(181, 166, 166);
     height:15vh;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+.key {
+    padding: 0 0.5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.key:active {
+    background-color: whitesmoke;
 }
 
 /* Media queries */
