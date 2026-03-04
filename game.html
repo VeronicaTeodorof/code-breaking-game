@@ -12,7 +12,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="container-fluid">
+<body class="d-flex flex-column min-vh-100">
     <!-- Header -->
     <header>
         <!-- Buttons container -->
@@ -73,8 +73,24 @@
     </main>
 
     <footer>
-        <section id="virtual-keyboard" class="keyboard">
-        </section>
+        <div id="virtual-keyboard" class="keyboard container-fluid">
+            <div class="row justify-content-around">
+                <div class="key col-1">1</div>
+                <div class="key col-1">2</div>
+                <div class="key col-1">3</div>
+                <div class="key col-1">4</div>
+                <div class="key col-1">5</div>
+                <div class="key col-1">6</div>
+                <div class="key col-1">7</div>
+                <div class="key col-1">8</div>
+                <div class="key col-1">9</div>
+                <div class="key col-1">0</div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="key col-6">Enter</div>
+                <div class="key col-4">Delete</div>
+            </div>
+        </div>
     </footer>
 
     <!--Bootstrap JS-->
