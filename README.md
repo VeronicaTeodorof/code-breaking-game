@@ -92,10 +92,15 @@ As a developer, I want:
 This game is going to be developed in several phases and with a mobile first, functionality first mindset. 
 The first phase aims to deliver the MVP, a fully functional game with only strictly necessary features.
 
+Once the basic functionality has been added, I decided to move on to the second phase and integrate the imagery, to speed up the styling process. I will first focus on styling the game for mobile, which requires a separate approach due to the lack of space. I will divide the viewheight in perceintages and allow each feature a predetermined percent.
+
 ## <h2 id="design">3. Design</h2>
 
 ### <h3 id="features">Features</h3>
 In the first phase there will be minimal features: a heading, a feedback section and a playing section. The playing section will include: the input fields, the submit button and the play button.
+
+In the second phase imagery will be added and the styling will be accordingly changed.
+The mobile version will include: a header with UI buttons, a main with the background image of a dragon and two sections: a feedback section, and a play section; the play section will have a padlock background image and a form to submit player guess. It will also include a virtual keyboard in the footer. Since the default virtual keyboard takes about 40-50% of the viewheight and the numeric one only saves 10-20%, I decided to add a custom one and block the default one, to be able to control the amount of space the keyboard takes.
 
 ### <h3 id="typography">Typography</h3>
 I will first experiment the playful "Mistery Quest" Google Font for heading paired with the contrasting sans-serif "Roboto" for everything else.
