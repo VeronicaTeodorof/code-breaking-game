@@ -45,10 +45,11 @@
 
         <!-- Play section -->
         <section id="play-area">
-            <div>
+            <div class="positin-relative text-center">
+                <img src="assets/images/padlock-small.webp" alt="Padlock" class="padlock mx-auto d-block">
                 <div id="error-modal" class="hidden"></div>
-                <form id="guess-form" class="guess-form">
-                    <h2>Enter code here:</h2>
+                <form id="guess-form" class="guess-form position-absolute start-50 translate-middle-x">
+                    <!-- <h2>Enter code here:</h2> -->
                     <!-- input mode="numeric" makes virtual keyboard dispaly numeric values only;
                      This was needed in order to save space (10 to 20% of screen height) on mobile devices.
                      Code was taken from stackoverflow and suggested by Kevin Loughrey -->
@@ -57,7 +58,7 @@
                     <input id="input3" name="input3" type="number" inputmode="numeric" class="input" aria-labelledby="input3" required>
                     <input id="input4" name="input4" type="number" inputmode="numeric" class="input" aria-labelledby="input4" required>
                     <br>
-                    <input id="submit" type="submit" value="Submit">
+                    <!-- <input id="submit" type="submit" value="Submit"> -->
                 </form>
             </div>
         </section>
@@ -72,7 +73,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="mt-auto">
         <div id="virtual-keyboard" class="keyboard container-fluid">
             <div class="row justify-content-around px-1">
                 <div class="key col-1">1</div>

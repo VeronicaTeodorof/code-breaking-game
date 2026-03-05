@@ -20,20 +20,20 @@
 }
 
 /* Global styles */
- /* body {
+ body {
     background: url('../images/background-image.webp');
     background-position-x: center;
     overflow: hidden;
-}  */
+} 
 
 header {
     background-color: green;
-    height: 10vh;
+    min-height: 10vh;
 }
 
 main {
-    background-color: white;
-    height: 75vh;
+    background-color: transparent;
+    min-height: 75vh;
 }
 
 h1 {
@@ -91,7 +91,7 @@ h2 {
     margin:auto;
     border: 2px solid var(--prussian-blue);
     max-width: 264px;
-    height: 50vh
+    min-height: 34vh;
 
 }
 
@@ -117,8 +117,13 @@ h2 {
 
 /* Play section */
 #play-area {
-    background-color: yellow;
-    height: 25vh;
+    background-color: transparent;
+    /* height: 25vh; */
+}
+
+.padlock {
+    height: 250px;
+    opacity: 0.8;
 }
 
 .hidden {
@@ -128,6 +133,10 @@ h2 {
 /* Form */
 form {
     text-align: center;
+}
+
+.guess-form {
+    top: 68%;
 }
 
 .input {
@@ -185,9 +194,9 @@ input[type="submit"] {
 /* Footer */
 .keyboard {
     background-color: rgb(181, 166, 166);
-    height:15vh;
+    min-height:15vh;
     border-radius: 0.5rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 .key {
     padding: 0 0.5rem;
