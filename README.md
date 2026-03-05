@@ -115,6 +115,9 @@ As there wasn't sufficient contrast between colours to have one for the text and
 ### <h3 id="wireframes">Wireframes</h3>
 [First phase wireframes](readme-assets/first-phase/first-phase-wireframe.png)
 
+
+[Second phase wireframes](readme-assets/second-phase/mobiile-wireframe-phase2.png)
+
 ## <h2 id="functionality">4. Functionality</h2>
 To see the picture of how the basic game would work I designed a [flowchart](readme-assets/first-phase/flowchart.pdf). Then I sketched the basic js [structure](readme-assets/first-phase/js-structure.png).
 
