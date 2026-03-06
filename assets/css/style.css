@@ -67,6 +67,13 @@ h2 {
 /* Index Page */
 
 /* Game Page */
+
+.game-body {
+    background-image: url("../images/dragon-treasure-larger.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* UI Buttons */
 .buttons-container {
     display: flex;
