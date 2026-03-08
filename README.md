@@ -160,6 +160,20 @@ Instructions on how to achieve this can be found below:
 6. Click Save. The live GitHub Pages website is now deployed at the URL shown.
 
 ## <h2 id="testing">7. Testing</h2>
+
+### <h3 id="known-bugs">Known Bugs</h3>
+
+
+**The Backspace Bug**
+
+
+Early in the development process my tutor told me that when a user is required to enter a four digit code, they would expect the cursor to automatically jump to the next input field after the previous one has been filled.
+I accomplished that with the following code: 
+
+<img src="readme-assets/second-phase/move-focus-function.png">
+
+The problem was that the cursor also moved to the next input in the following situation: the user changes their mind about one of the values entered, manually moves the cursor to one of the previous input fields, presses backspace to delete the value, the value is deleted. Now naturally they expect the cursor to stay in the selected input to be able to type the new value, but instead, the cursor moves to the next input automatically bacause backspace event is interpreted as an "input" event.
+
 ### <h3 id="w3c">W3C Validation</h3>
 First phase:
 
@@ -172,7 +186,7 @@ Style.css page has also been validated with no errors found: [css initial valida
 ### <h3 id="lighthouse">Lighthouse</h3>
 Initial lighthouse tests show some areas that can be improved in terms of accessibility and SEO. Here are the screenshots for initial tests: [initial lighthouse for mobile](readme-assets/first-phase/lighthouse-for-mobile-initial.png), [initial lighthouse for desktop](readme-assets/first-phase/lighthouse-for-desktop-initial.png), [accessibility](readme-assets/first-phase/accessibility-initial.png) and [SEO](readme-assets/first-phase/seo-initial.png).
 
-## <h2 id="credits2">7. Credits</h2>
+## <h2 id="credits2">8. Credits</h2>
 ### <h3 id="documentation">Documentation</h3>
 
 While trying to understand what intuitive design for a game means, and what the acceptance criteria and tasks whould be in order to meet this user story, I realized that I need to add another user story, the one about input validation, because no player wants to be allowed to enter invalid data type, but they want to be warned about that, and easily correct the mistake. So this user story is written with the help of AI overview for "acceptance criteria for intuitive design of a game".
