@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.getElementById("submit");
-    const errorModal = document.getElementById("error-modal");
     let computerCode = generateCode();
 
     cursorReady();
     
     // Add event listeners
     submitButton.addEventListener("click", cursorReady);
-    document.addEventListener("click", closeModal); // Closes error modal when user clicks anywhere on the page
     document.querySelector("form").addEventListener("submit", showData);
 
     // Sets the cursor ready for the user to type the first input
@@ -45,19 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return digit;
     }
     
-    // Makes error modal visible
-    function showError() {
-        errorModal.classList.remove("hidden");
-        errorModal.innerText = "Please enter a digit from 0 to 9"
-        return errorModal;
-    }
-    
-    // Makes error modal invisible
-    function closeModal() {
-        errorModal.classList.add("hidden");
-    }
-
-
     function showData(e) {
         e.preventDefault();
         myForm = e.target;
