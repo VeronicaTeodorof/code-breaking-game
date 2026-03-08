@@ -29,6 +29,7 @@
 main {
     background-color: transparent;
     min-height: 75vh;
+    
 }
 
 h1 {
@@ -112,12 +113,13 @@ h2 {
     min-height: 20vh;
     position: absolute;
     top: 1%;
+    /* left: 20%; */
     
 
 }
 
 .guess {
-    max-height: 1.7rem;
+    max-height:1.8rem;
 }
 
 /* Gradient created in coolors.co */
@@ -164,7 +166,7 @@ form {
 }
 
 .guess-form {
-    top: 50%;
+    top: 58%;
 }
 
 .input {
