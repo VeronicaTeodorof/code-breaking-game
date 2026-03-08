@@ -23,26 +23,31 @@
     </header>
 
     <!-- Main -->
-    <main class="position-relative">
+    <main>
         <div class="light-overlay">
             <img src="assets/images/dragon-symbol-dark-removebg.webp" alt="metallic serpent dragon" 
             class="dragon-symbol position-absolute start-50 translate-middle-x">
         </div>
         <!-- Feedback section -->
         <section id="feedback" class="feedback">
-            <div id="first-column" class="custom-container left-container">
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
+            <div id="first-column" class="container left-container">
+                <!-- Bootstrap class "text-center" found with the help of Claude AI-->
+                <div class="row text-center">
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                </div>
             </div>
-            <div id="second-column" class="custom-container">
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span float-right"></span></div>
-                <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span last float-right"></span></div>
+            <div id="second-column" class="container right-container">
+                <div class="row text-center">
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess"><span class="guess-span visible-text"></span><span class="feedback-span last"></span></div>
+                </div>
             </div>
         </section>
 
