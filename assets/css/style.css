@@ -45,6 +45,19 @@
     left: 5%;
 
 }
+.lead-div {
+    background-color: rgba(85, 59, 59, 0.286);
+    opacity: 0.9;
+    border-radius: 5%;
+}
+
+.lead-text {
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight:bold;
+    font-family: var(--primary-font);
+    margin: 1rem;
+}
 
 .custom-box {
     background-color: var(--chest-brown);
