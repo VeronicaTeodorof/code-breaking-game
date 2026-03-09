@@ -38,11 +38,25 @@
     position: relative;
 } 
 
+body {
+    overflow: hidden;
+}
+
+.hero-image {
+    max-height: 90vh;
+    position: absolute;
+    left: 15%;
+    top: 0;
+    z-index: -900;
+    opacity: 0.3;
+}
+
 .treasure-image {
     position:absolute;
     max-height: 200px;
     top: 65%;
     left: 5%;
+    z-index: 990;
 
 }
 .lead-div {
