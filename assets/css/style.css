@@ -49,18 +49,21 @@
     background-color: rgba(85, 59, 59, 0.286);
     opacity: 0.9;
     border-radius: 5%;
+    position:absolute;
+    top:30%;
 }
 
 .lead-text {
     color: aliceblue;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight:bold;
     font-family: var(--primary-font);
     margin: 1rem;
 }
 
 .custom-box {
-    background-color: var(--chest-brown);
+    /* 
+     */
     border: 2px solid var(--prussian-blue);
 }
 
@@ -200,15 +203,19 @@ input[type="submit"] {
 
 /* Play button */
 #play-button {
-    font-family: var(--heading-font);
-    color: var(--treasure-yellow);
+    font-family: var(--primary-font);
+    color: hsla(236, 71%, 8%, 1);
     font-size: xx-large;
-    letter-spacing: 0.3rem;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
     padding: 0.5rem;
     margin-top: 20px;
     border-radius: 10%;
     box-shadow: 3px 5px var(--prussian-blue);
     min-width: 120px;
+    position: absolute;
+    top:50%;
+    left: 33%;
 }
 #play-button:hover {
     color: var(--chest-brown);
