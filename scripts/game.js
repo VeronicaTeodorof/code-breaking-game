@@ -54,16 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let input4 = parseInt(myForm.input4.value);
         let guessCode = [input1, input2, input3, input4];
         console.log(guessCode);
-        
-        // Validates input values are in the 0 - 9 range
-        for(let input of guessCode) {
-            if(input > 9 || input < 0) {
-                showError();
-                throw new RangeError("The digit entered must be between 0 and 9."); //stops the code from running when input out of range
-                
-            } 
-        }
-        
+    
 
         let spanGuess = document.querySelector(".guess-span");
         spanGuess.innerText = `${input1} ${input2} ${input3} ${input4}`;  // Writes guessCode in feedback area
@@ -87,8 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 if(guessCode[k] === computerCode[k]) {
                     numCorrect++;
                     if(numCorrect === 4) { 
-                        alert("You guessed!");
-                        throw new Error ("This is not an error. This is just to stop the execution of the nex part of code");
+                        // code used to trigger bs modal from JS written with help from: https://www.youtube.com/watch?v=tyxchSojW48
+                        const winModal = new bootstrap.Modal('#winModal');
+                        winModal.show(); 
                     }
                 } else {
                     // Creates a copy of guessCode with digits correctly guessed removed;
