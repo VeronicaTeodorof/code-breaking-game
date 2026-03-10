@@ -13,14 +13,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100 game-body">
-    <!-- Header -->
-    <header>
-        <!-- Buttons container -->
-        <!-- <div class="buttons-container">
-            <button class="game-button" id="instructions">❓</button>
-            <button class="game-button" id="return-home">🏠</button>
-        </div> -->
-    </header>
+    
+    <!-- How to play Bootstrap Modal -->
+    <!-- Solve problem with aria-hidden warning-->
+    <div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="howToModalLabel">How to Play</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Instrucions body</p>
+                </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
 
     <!-- Main -->
     <main>
@@ -72,7 +84,7 @@
     <footer class="mt-auto footer">
         <!-- Buttons container -->
         <div class="buttons-container">
-            <button class="game-button golden-gradient" id="instructions">❓</button>
+            <button class="game-button golden-gradient" id="instructions"  data-bs-toggle="modal" data-bs-target="#howToModal">❓</button>
             <a href="index.html"><button class="game-button golden-gradient" id="return-home">🏠</button></a>
         </div>
     </footer>
