@@ -88,27 +88,27 @@
                 <!-- Bootstrap class "text-center" found with the help of Claude AI-->
                 <div class="row text-center">
                     <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
                 </div>
             </div>
             <div id="second-column" class="container right-container">
                 <div class="row text-center">
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span allign-text-bottom"></span></div>
-                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span last allign-text-bottom"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span"></span></div>
+                    <div class="guess d-flex justify-content-around"><span class="guess-span visible-text"></span><span class="feedback-span last"></span></div>
                 </div>
             </div>
         </section>
 
          <!-- Play section -->
         <section id="play-area">
-            <div class="positin-relative text-center">
-                <form id="guess-form" class="guess-form position-absolute start-50 translate-middle-x">
+            <div>
+                <form id="guess-form" class="guess-form">
                     <!-- input mode="numeric" makes virtual keyboard dispaly numeric values only;
                      This was needed in order to save space (10 to 20% of screen height) on mobile devices.
                      Code was taken from stackoverflow and suggested by Kevin Loughrey -->
@@ -116,8 +116,7 @@
                     <input id="input2" name="input2" type="number" inputmode="numeric" class="input" aria-labelledby="input2"  min="0" max="9" required>
                     <input id="input3" name="input3" type="number" inputmode="numeric" class="input" aria-labelledby="input3"  min="0" max="9" required>
                     <input id="input4" name="input4" type="number" inputmode="numeric" class="input" aria-labelledby="input4"  min="0" max="9" required>
-                    <br>
-                    <input id="submit" type="submit" value="Submit">
+                    <input id="submit" type="submit" value="Try">
                 </form>
             </div>
         </section>
