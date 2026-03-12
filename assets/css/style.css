@@ -313,6 +313,18 @@ input[type="submit"] {
 }
 
 
+/* Modals */
+
+.button-modal {
+    background-image: url("../images/paper.webp");
+    background-color: transparent;
+    background-size: contain;
+    
+}
+
+
+
+
 /* Media queries */
 
 /* for medium screens 760px to 1024px */
