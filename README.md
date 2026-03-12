@@ -164,7 +164,7 @@ Instructions on how to achieve this can be found below:
 ## <h2 id="testing">7. Testing</h2> 
 
  ### <h3 id="full-testing">Full Testing</h3>
- After implementing second phase design, my tutor's feedback was that I should keep the submit button everywhere (I intended to remove it completely from the mobile view because of the lack of space); he said that mobile users do not use the enter key on a virtual keyboard much and therefore I needed a dedicated button. He also suggested increasing font size of the feedback and guess on the desktop view and changing some colous in the feedback for better visibility.
+ After implementing second phase design, my tutor's feedback was that I should keep the submit button everywhere (I intended to remove it completely from the mobile view because of the lack of space); he said that mobile users do not use the enter key on a virtual keyboard much and therefore I needed a dedicated button that I could even align with the form inputs to save space.  He also suggested increasing font size of the feedback and guess on the desktop view and changing some colous in the feedback for better visibility.
 
 
 ### <h3 id="solved-bugs">Solved Bugs</h3>

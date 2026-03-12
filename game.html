@@ -16,7 +16,7 @@
     
     <!-- How to play Bootstrap Modal -->
     <!-- Solve problem with aria-hidden warning-->
-    <div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="howToModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -25,6 +25,24 @@
                 </div>
                 <div class="modal-body">
                     <p>Instrucions body</p>
+                </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story Modal -->
+     <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="storyModalLabel">The Story</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Story body</p>
                 </div>
                  <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -125,7 +143,8 @@
     <footer class="mt-auto footer">
         <!-- Buttons container -->
         <div class="buttons-container">
-            <button class="game-button golden-gradient" id="instructions"  data-bs-toggle="modal" data-bs-target="#howToModal">❓</button>
+            <button class="game-button golden-gradient" id="story" data-bs-toggle="modal" data-bs-target="#storyModal">🐉</button>
+            <button class="game-button golden-gradient" id="instructions" data-bs-toggle="modal" data-bs-target="#howToModal">❓</button>
             <a href="index.html"><button class="game-button golden-gradient" id="return-home">🏠</button></a>
         </div>
     </footer>
