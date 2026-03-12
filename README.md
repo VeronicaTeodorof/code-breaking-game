@@ -33,7 +33,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - Local Development
 
 ### <a href="#testing">7. Testing</a>
-- Full Testing
+- <a href="full-testing">Full Testing</a>
 - Solved Bugs 
 - Known Bugs
 - <a href="#w3c">W3C Validation</a>
@@ -161,7 +161,10 @@ Instructions on how to achieve this can be found below:
 5. Under the Build and deployment header, in the Source section, select main branch from the dropdown menu. Make sure Root is selected in the dropdown select folder menu.
 6. Click Save. The live GitHub Pages website is now deployed at the URL shown.
 
-## <h2 id="testing">7. Testing</h2>
+## <h2 id="testing">7. Testing</h2> 
+
+ ### <h3 id="full-testing">Full Testing</h3>
+ After implementing second phase design, my tutor's feedback was that I should keep the submit button everywhere (I intended to remove it completely from the mobile view because of the lack of space); he said that mobile users do not use the enter key on a virtual keyboard much and therefore I needed a dedicated button. He also suggested increasing font size of the feedback and guess on the desktop view and changing some colous in the feedback for better visibility.
 
 ### <h3 id="known-bugs">Known Bugs</h3>
 
