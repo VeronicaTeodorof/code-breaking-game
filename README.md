@@ -177,6 +177,19 @@ I tried to rectify it with bootstrap classes: "allign-middle", "allign-bottom", 
 I eventually sorted that with css "display: flex;" and "allign-items: center;" with help from https://www.w3schools.com/css/css_align_vertical.asp.
 
 
+**Wrong Event Modal Bug**
+
+After removing the alerts for winning and losing events, and replacing them with bootstrap modals, Vlad Boitos discovered the event modal bug. The loseModal would always appear on the screen after the player submitted the 10th try, regardless of whether this guess would be worng or correct. When the guess was correct, the loseModal would appear on top of the winModal.
+
+<img src="readme-assets/second-phase/loosing-condition-before.png">
+
+
+This was corrected by changing the second loosing condition: 
+
+<img src="readme-assets/second-phase/loosing-condition-after.png">
+
+
+
 ### <h3 id="known-bugs">Known Bugs</h3>
 
 
@@ -189,10 +202,6 @@ I accomplished that with the following code:
 <img src="readme-assets/second-phase/move-focus-function.png">
 
 The problem was that the cursor also moved to the next input in the following situation: the user changes their mind about one of the values entered, manually moves the cursor to one of the previous input fields, presses backspace to delete the value, the value is deleted. Now naturally they expect the cursor to stay in the selected input to be able to type the new value, but instead, the cursor moves to the next input automatically bacause backspace event is interpreted as an "input" event.
-
-**Wrong Event Modal Bug**
-
-After removing the alerts for winning and losing events, and replacing them with bootstrap modals, Vlad Boitos discovered the event modal bug. The loseModal would always appear on the screen after the player submitted the 10th try, regardless of whether this guess would be worng or correct. When the guess was correct, the loseModal would appear on top of the winModal.
 
 
 ### <h3 id="w3c">W3C Validation</h3>

@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let feedback = document.querySelector(".feedback-span");
                 feedback.innerText = `${blackDot.repeat(numCorrect)} ${whiteDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
                 feedback.classList.remove("feedback-span");
-                if(feedback.classList.contains("last") && feedback.innerText !== "⚫⚫⚫⚫") {
+                if(feedback.classList.contains("last") && numCorrect !== 4) {
                     // alert(`Game over! The code was: ${computerCode}.`);
                     const loseModal = new bootstrap.Modal('#loseModal');
                         loseModal.show(); 
