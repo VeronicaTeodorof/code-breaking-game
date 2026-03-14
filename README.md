@@ -147,6 +147,8 @@ https://www.remove.bg/ for removing image background
 
 https://imagecolorpicker.com/ for picking colors from images
 
+https://www.favicon-generator.org/ for generating the favicon used on the site
+
 ## <h2 id="deployment-and-development">6. Deployment and Local Development
 ### <h3 id="deployment">Deployment</h3>
 
