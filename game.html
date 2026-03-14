@@ -22,15 +22,23 @@
                 <!-- Bootstrap border-0 class to remove border between head and body and between body and footer taken form
                  https://stackoverflow.com/questions -->
                 <div class="modal-header border-0">
-                     <h1 class="modal-title fs-5" id="howToModalLabel">How to Play</h1>
+                     <h1 class="modal-title text-center" id="howToModalLabel">How to Play</h1>
                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Instrucions body</p>
+                    <p>Enter a 4 digit key and press Enter or press/click Try.</p>
+                    <p>Your guess will be displayed alongside a feedback:</p>
+                    <P>⚪ is a correct digit in the correct place;</P>
+                    <p>🔴 is a correct digit incorrectly placed;</p>
+                    <p>❌ is an incorrect digit.</p>
+                    <p>The order of the symbols in feedback does not relate to the order of the digits in your guess.
+                       ⚪ if any, will always be dispalyed first, 🔴 if any, will be dispalyed second, and ❌ last.
+                    </p>
+                    <button type="button" class="btn modal-button text-align-right" data-bs-dismiss="modal">Close</button>
                 </div>
-                 <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+                 <!-- <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-button" data-bs-dismiss="modal">Close</button>
+                </div> -->
             </div>
         </div>
     </div>
