@@ -360,28 +360,12 @@ input[type="submit"] {
     margin-bottom:1.5rem;
 }
 
+.fire-background {
+    background: url(../images/fire-background1.webp);
+    background-size: cover;
+}
+
 /* Lose animation */
-/* Some early attempts to make the lose animation adapting code from: 
-https://stackoverflow.com/questions/70000450/how-to-animate-image-from-fixed-size-to-fullscreen */
-
-.lose-animation-div {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 3px;
-    width: 100%;
-    transition: scale .3s ease;
-}
-
-.lose-animation-div.active {
-  transform: translate(-50%, -50%) scale(var(--scale));
-}
-
-.fire {
-    width: 100%;
-    height: auto;
-}
 
 
 /* Media queries */
