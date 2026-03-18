@@ -1,12 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.getElementById("submit");
     let computerCode = generateCode();
+    let myForm = document.querySelector("form");
+    let count = 10;
 
     cursorReady();
     
     // Add event listeners
     submitButton.addEventListener("click", cursorReady);
-    document.querySelector("form").addEventListener("submit", showData);
+    myForm.addEventListener("submit", showData);
+    myForm.addEventListener("submit", countTries);
+
+
+    /* Wrapping two functions in a function as per: 
+     https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
+     doesn't work here. 
+     Page is refreshed after each submit. */
+    
+    // myForm.addEventListener("submit", () => {
+    //     showData();
+    //     countTries();
+    // });
+      
+    function countTries() {
+        count--;
+        console.log(count);
+    
+    }
 
     // Sets the cursor ready for the user to type the first input
     function cursorReady() {

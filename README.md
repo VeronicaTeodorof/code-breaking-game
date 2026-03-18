@@ -161,7 +161,7 @@ The second one has a question mark symbol and opens an instructions modal.
 <img src="readme-assets/second-phase/instructions-desktop.png">
 
 
-And the third on is a link to home page.
+And the third one is a link to home page.
 
 ### <h3 id="typography">Typography</h3>
 I first experimented with the playful "Mistery Quest" Google Font for heading paired with the contrasting sans-serif "Roboto" for everything else.
