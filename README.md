@@ -209,6 +209,27 @@ All other secondary colours used are either a reminiscence of the initial colour
 ## <h2 id="functionality">4. Functionality</h2>
 To see the picture of how the basic game would work I designed a [flowchart](readme-assets/first-phase/flowchart.pdf). Then I sketched the basic js [structure](readme-assets/first-phase/js-structure.png).
 
+countTries function https://www.tutorialspoint.com/article/how-to-count-the-number-of-times-a-button-is-clicked-using-javascript#
+
+**Animations**
+
+
+**Lose Event Animation**
+For this event I'm trying to chain 2-3 images to obtain a cinematic animation: 
+- dark background covers the game page
+- image of a dragon appears and dissapears
+- (optional, either here or maybe as a background modal) fullscreen fire image;
+
+So far I've failed to chain these images, having tried with animation-delay. I will now try to start them all at the same time using the following strategy: 
+time1 = time for image one animation;
+time2 += time1 //nothing happens until time1 has passed
+time3 += time2 //nothing happens until time2 has passed
+
+I wish myself goodluck! :>
+Yess!
+
+
+
 ## <h2 id="technologies">5. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
 HTML has been used to shape the skeleton of the game page.

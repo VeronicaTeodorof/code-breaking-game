@@ -134,12 +134,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 let whiteDot = "⚪ ";
                 let redX = "❌ ";
                 let feedback = document.querySelector(".feedback-span");
+                let animation = document.querySelector(".dark-overlay")
                 feedback.innerText = `${whiteDot.repeat(numCorrect)} ${redDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
                 feedback.classList.remove("feedback-span");
                 if(feedback.classList.contains("last") && numCorrect !== 4) {
                     // alert(`Game over! The code was: ${computerCode}.`);
-                    const loseModal = new bootstrap.Modal('#loseModal');
-                        loseModal.show(); 
+                    // const loseModal = new bootstrap.Modal('#loseModal');
+                        // loseModal.show(); 
+                    animation.classList.remove("removed");
                 }
                 return feedback;
             }
