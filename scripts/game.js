@@ -4,29 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
     let myForm = document.querySelector("form");
     let count = 10;
 
+    
+
     cursorReady();
-    
-    // Add event listeners
+
     submitButton.addEventListener("click", cursorReady);
-    myForm.addEventListener("submit", showData);
-    myForm.addEventListener("submit", countTries);
 
-
-    /* Wrapping two functions in a function as per: 
-     https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
-     doesn't work here. 
-     Page is refreshed after each submit. */
-    
-    // myForm.addEventListener("submit", () => {
-    //     showData();
-    //     countTries();
-    // });
-      
-    function countTries() {
-        count--;
-        console.log(count);
-    
-    }
 
     // Sets the cursor ready for the user to type the first input
     function cursorReady() {
@@ -78,91 +61,87 @@ document.addEventListener("DOMContentLoaded", function() {
         let input3 = parseInt(myForm.input3.value);
         let input4 = parseInt(myForm.input4.value);
         let guessCode = [input1, input2, input3, input4];
-        console.log(guessCode);
-    
-
+        // Writes guessCode in feedback area
         let spanGuess = document.querySelector(".guess-span");
-        spanGuess.innerText = `${input1} ${input2} ${input3} ${input4}`;  // Writes guessCode in feedback area
-        spanGuess.classList.remove("guess-span"); // Removes class from filled div so that the following guess code goes to next available div
-        checkAnswer();
-        myForm.reset(); // Empties input fields without refreshing the page
-                
-            
+        spanGuess.innerText = `${input1} ${input2} ${input3} ${input4}`;  
+        // Removes guess-span class from the filled span, so that the next span is then selected
+        spanGuess.classList.remove("guess-span");
+
+        checkAnswer(guessCode);
+        count--;
+        console.log(count)
+        myForm.reset(); 
         
+    }
 
-        function checkAnswer() {
-            let numCorrect = 0;
-            let numIncorrectlyPlaced = 0;
-            let numIncorrect = 0;
-            let splicedGuessCode = [];
-            let splicedComputerCode = [];
-            
+    function checkAnswer(guessCode) {
+        console.log(guessCode);
+        // do whatever you need here
+        let numCorrect = 0;
+        let numIncorrectlyPlaced = 0;
+        let numIncorrect = 0;
+        let splicedGuessCode = [];
+        let splicedComputerCode = [];
+       
 
-            //Code to find numCorrect
-            for(let k = 0; k < guessCode.length; k++) {
-                if(guessCode[k] === computerCode[k]) {
-                    numCorrect++;
-                    if(numCorrect === 4) { 
-                        // code used to trigger bs modal from JS written with help from: https://www.youtube.com/watch?v=tyxchSojW48
-                        const winModal = new bootstrap.Modal('#winModal');
-                        winModal.show(); 
-                    }
-                } else {
-                    // Creates a copy of guessCode with digits correctly guessed removed;
-                    splicedGuessCode.push(guessCode[k]); 
-                    // Creates a copy of computerCode with digits correctly guessed removed;
-                    splicedComputerCode.push(computerCode[k]);
-                }
+        //Code to find numCorrect
+        for(let k = 0; k < guessCode.length; k++) {
+            if(guessCode[k] === computerCode[k]) {
+                numCorrect++;
+                // if(numCorrect === 4) { 
+                    // code used to trigger bs modal from JS written with help from: https://www.youtube.com/watch?v=tyxchSojW48
+                    // const winModal = new bootstrap.Modal('#winModal');
+                    // winModal.show(); 
+                // }
+            } else {
+                splicedGuessCode.push(guessCode[k]); 
+                // Creates a copy of computerCode with digits correctly guessed removed;
+                splicedComputerCode.push(computerCode[k]);
             }
-            
-            // Code to calculate numbers incorrectly placed and numbers incorrect
-            for(let j = 0; j < splicedGuessCode.length; j++) {
-                if(splicedComputerCode.includes(splicedGuessCode[j])) {
-                    numIncorrectlyPlaced++;
+        }
 
-                    let index = splicedComputerCode.indexOf(splicedGuessCode[j]); 
-                    splicedComputerCode.splice(index, 1);
-                    splicedGuessCode.splice(j, 1);
-                    j--; // When one element is removed, the index of the following element decreases by 1
-                } else {
-                    numIncorrect++;
-                }
+        //  Code to calculate numbers incorrectly placed and numbers incorrect
+        for(let j = 0; j < splicedGuessCode.length; j++) {
+            if(splicedComputerCode.includes(splicedGuessCode[j])) {
+                numIncorrectlyPlaced++;
+
+                let index = splicedComputerCode.indexOf(splicedGuessCode[j]); 
+                splicedComputerCode.splice(index, 1);
+                splicedGuessCode.splice(j, 1);
+                j--; // When one element is removed, the index of the following element decreases by 1
+            } else {
+                numIncorrect++;
             }
-
-            function giveFeedback() {
-                let redDot = "🔴 ";
-                let whiteDot = "⚪ ";
-                let redX = "❌ ";
-                let feedback = document.querySelector(".feedback-span");
-                let animation = document.querySelector(".dark-overlay")
-                feedback.innerText = `${whiteDot.repeat(numCorrect)} ${redDot.repeat(numIncorrectlyPlaced)} ${redX.repeat(numIncorrect)}`;
-                feedback.classList.remove("feedback-span");
-                if(feedback.classList.contains("last") && numCorrect !== 4) {
-                    // alert(`Game over! The code was: ${computerCode}.`);
-                    // const loseModal = new bootstrap.Modal('#loseModal');
-                        // loseModal.show(); 
-                    animation.classList.remove("removed");
-                }
-                return feedback;
-            }
-
-            return giveFeedback();
-               
-               
+        }
         
-            
-            
+        let correctedAnswer = [numCorrect, numIncorrectlyPlaced, numIncorrect];
+        console.log(correctedAnswer);
 
-            
+        giveFeedback(correctedAnswer);
+        winLose(correctedAnswer, count);
+        
+    }
 
-            
-            console.log(numCorrect);
-            console.log(numIncorrectlyPlaced);
-            console.log(numIncorrect);
-            console.log(splicedGuessCode);
-            console.log(splicedComputerCode);
-            console.log(guessCode);
-            console.log(computerCode);
+    function giveFeedback(correctedAnswer) {
+    
+        let redDot = "🔴 ";
+        let whiteDot = "⚪ ";
+        let redX = "❌ ";
+        let feedback = document.querySelector(".feedback-span");
+        feedback.innerText = `${whiteDot.repeat(correctedAnswer[0])} ${redDot.repeat(correctedAnswer[1])} ${redX.repeat(correctedAnswer[2])}`;
+        feedback.classList.remove("feedback-span");
+    }
+
+    function winLose(correctedAnswer, count) {
+        if(correctedAnswer[0] === 4 && count > 0) {
+            alert("You won");
+        } else if(correctedAnswer[0] !== 4 && count === 1) {
+            alert("You lost!");
         }
     }
+
+    
+
+    myForm.addEventListener("submit", showData);
+    
 });

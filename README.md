@@ -332,7 +332,20 @@ This is what I was doing wrong:
 
 This is what I'll try: 
 
-<img src="readme-assets/second-phase/possible-solution.png" style="height: 300px">
+<img src="readme-assets/second-phase/possible-solution.png" style="height: 300px">.
+
+From my conversation with Claude AI I understood that part of the problem was where the event listener on submit button was called. So I moved it to the bottom of the file.
+
+
+Then I tried to unnest the functions from inside showData(e) by passing the input values accessed by it and grouped in guessCode array variable, as a parameter to another function checkAnswer(guessCode) and call it from inside showData(e). This way input data travelled down from function to function without the need of having it in the global scope.
+
+
+But because checkAnswer(guessCode) now depends on data from showData(e), it can't be called in the global scope either. So I decided to use the same technique of passing down data as parameter to a function that would be called from inside the mother function. So I created two more functions that took their parameters form checkAnswer(guessCode): giveFeedback and winLose. Previously, winning and loosing conditions were separate and scatered in different functions, so it felt natural to bring them together into one function.
+
+I created an image with what I understood the logic of the functions chain would be: 
+<img src="readme-assets/second-phase/logic-of-the-functions-chain.png">
+
+It still feels unnatural that the now separated functions still depend on eachother.
 
 
 ### <h3 id="w3c">W3C Validation</h3>
