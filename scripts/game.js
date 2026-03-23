@@ -151,8 +151,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function winLose(correctedAnswer, count) {
         if(correctedAnswer[0] === 4) {
-            disappear.classList.add("fade-out");
-            footer.classList.add("fade-out");
+            disappear.classList.add("fade-out", "pointers-disabled");
+            footer.classList.add("fade-out", "pointers-disabled");
         } else if(correctedAnswer[0] !== 4 && count === 0) {
             darkOverlay.classList.remove("removed");
         }

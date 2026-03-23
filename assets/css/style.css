@@ -53,6 +53,15 @@
     display: none;
 }
 
+/* || INTERACTIVITY */
+.pointers-active {
+    pointer-events: auto;
+}
+
+.pointers-disabled {
+    pointer-events: none;
+}
+
 /* || FADE-OUT ANIMATION */
 .fade-out {
     animation: fade-out 3s ease-out;
@@ -168,13 +177,6 @@ h1 {
     float: right;
     padding-right: 10px;
     padding-top: 4px;
-}
-
-
-/* Play section */
-
-.hidden {
-    display: none;
 }
 
 /* Form */

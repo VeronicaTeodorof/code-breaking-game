@@ -225,6 +225,9 @@ time1 = time for image one animation;
 time2 += time1 //nothing happens until time1 has passed
 time3 += time2 //nothing happens until time2 has passed
 
+This approach is working.
+For wiring up losing text message and UI buttons at the end of the animation I'm planning to use animationend event (resource: https://www.w3schools.com/jsref/event_animationend.asp).
+
 
 ## <h2 id="technologies">5. Technologies Used</h2>
 ### <h3 id="languages">Languages Used</h3>
@@ -290,6 +293,11 @@ This was corrected by changing the second loosing condition:
 
 <img src="readme-assets/second-phase/loosing-condition-after.png">
 
+
+**Interactivity: Pointer Bug**
+ Vlad Boitos discovered that input fields still produce visible feedback after win fade-out animation id played, even though they are not visible themselves. I checked and discovered that the now invisible UI buttons also trigger their specific actions when clicked.
+ I tried to sort this issue by adding display none to relevant sections when animation ends, using animationend event. This solved the input fields issue (no visible feedback given), but not the buttons. I tried negative positioning relevant sections and tests passed.
+ I asked Claude AI if that was a good fix and it sugessted there were better fixes than trying to solve an interactivity problem with a positioning solution, and added that negative positioning can sometimes trigger unexpected scroll or overflow behaviout. It suggested looking up pointer-event css property (good resource: https://mimo.org/glossary/css/pointer-events). This approach works better and sorted the issue.
 
 
 ### <h3 id="known-bugs">Known Bugs</h3>
@@ -365,7 +373,6 @@ In the section "Getting form data" in Code Institute's course, both runnable exa
 And I believe most if not all examples I've checked in other sources showed the same thing: a submit event handler that was preventing default behaviiour (page refreshing), declaring form variable and assigning it as the target of the event parameter, and also somehow accessing data from input fields. So my instinct was to copy that. I later realized that I could declare the form variable in the global scope, but still it didn't cross my mind that I could also access the values of the input fields in functions other than showData(e).
 
 So now I'll try this: showData(e) will only prevent event default, and call another function that accesses the input values. Nothing else.
-
 
 
 ### <h3 id="w3c">W3C Validation</h3>
