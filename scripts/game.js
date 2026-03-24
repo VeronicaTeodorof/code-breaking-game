@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const disappear = document.querySelector(".disappear");
     const footer = document.querySelector("footer");
     const loseDiv = document.querySelector(".lose-events-wrapper");
-    console.log(darkOverlay);
+    const loseModal = new bootstrap.Modal('#loseModal');
+    const reviewLose = document.getElementById("review-lose");
+    const winModal = new bootstrap.Modal('#winModal');
+    const reviewWin = document.getElementById("review-win");
     let count = 10;
 
     
@@ -152,14 +155,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function winLose(correctedAnswer, count) {
         if(correctedAnswer[0] === 4) {
-            const winModal = new bootstrap.Modal('#winModal');
             const winDelay = 3000;
             disappear.classList.add("fade-out");
             footer.classList.add("fade-out", "pointers-disabled");
             delayModal(winModal, winDelay);
             disableForm();
         } else if(correctedAnswer[0] !== 4 && count === 0) {
-            const loseModal = new bootstrap.Modal('#loseModal');
             const loseDelay = 9500;
             darkOverlay.classList.remove("removed");
             delayModal(loseModal, loseDelay);
@@ -179,6 +180,30 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => modal.show(), delay);
     }
 
+    function reviewScreen() {
+        myForm.classList.add("removed");
+        triesLeft.innerText = `Key: ${computerCode[0]}${computerCode[1]}${computerCode[2]}${computerCode[3]}`;
+    }
+
+    function reviewScreenLose() {
+        loseModal.hide();
+        reviewScreen(loseModal);
+        darkOverlay.classList.add("removed");
+    }
+
+    function reviewScreenWin() {
+        winModal.hide();
+        reviewScreen(winModal);
+        disappear.classList.remove("fade-out");
+        disappear.style.opacity = "1";
+        footer.classList.remove("fade-out");
+        footer.style.opacity ="1";
+        footer.classList.remove("pointers-disabled")
+        footer.classList.add(".pointers-active");
+    }
+    
+    reviewWin.addEventListener("click", reviewScreenWin);
+    reviewLose.addEventListener("click", reviewScreenLose);
     myForm.addEventListener("submit", showData);
     
 });
