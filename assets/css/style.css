@@ -389,7 +389,7 @@ input[type="submit"] {
     margin-bottom:1.5rem;
 }
 
-/* Win modal */
+
 
 /* || Lose animation */
 
@@ -460,6 +460,21 @@ input[type="submit"] {
     100% {
         opacity: 0;
     }
+}
+
+/* Review screen */
+#play-again-button {
+    top:50%;
+    font-family: var(--primary-font);
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    margin-top: 20px;
+    border-radius: 10%;
+    box-shadow: 3px 5px var(--prussian-blue);
+    min-width: 120px;
 }
 
 

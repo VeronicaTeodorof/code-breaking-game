@@ -181,8 +181,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function reviewScreen() {
+        const playAgain = document.getElementById("play-again-button");
+
         myForm.classList.add("removed");
         triesLeft.innerText = `Key: ${computerCode[0]}${computerCode[1]}${computerCode[2]}${computerCode[3]}`;
+        playAgain.classList.remove("removed");
+        playAgain.classList.remove("pointers-disabled");
     }
 
     function reviewScreenLose() {
