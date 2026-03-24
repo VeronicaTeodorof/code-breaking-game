@@ -399,6 +399,13 @@ After changing button size and margin, the accessibility issue was solved:
 [desktop lighthouse after](readme-assets/second-phase/desktop-lighthouse-after.png).
 
 ## <h2 id="credits2">8. Credits</h2>
+### <h3 id = "resources">Resources</h2>
+**Bootstrap Modals**
+https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
+
+**JavaScript**
+https://developer.mozilla.org/
+
 ### <h3 id="documentation">Documentation</h3>
 
 While trying to understand what intuitive design for a game means, and what the acceptance criteria and tasks whould be in order to meet this user story, I realized that I need to add another user story, the one about input validation, because no player wants to be allowed to enter invalid data type, but they want to be warned about that, and easily correct the mistake. So this user story is written with the help of AI overview for "acceptance criteria for intuitive design of a game".

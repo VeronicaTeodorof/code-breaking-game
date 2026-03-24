@@ -152,11 +152,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function winLose(correctedAnswer, count) {
         if(correctedAnswer[0] === 4) {
-            disappear.classList.add("fade-out", "pointers-disabled");
+            disappear.classList.add("fade-out");
             footer.classList.add("fade-out", "pointers-disabled");
             disableForm();
         } else if(correctedAnswer[0] !== 4 && count === 0) {
+            const loseModal = new bootstrap.Modal('#loseModal');
+            const loseDelay = 9500;
             darkOverlay.classList.remove("removed");
+            delayModal(loseModal, loseDelay);
             disableForm();
         }
         
@@ -164,8 +167,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function disableForm() {
         fieldset.setAttribute("disabled", "");
+        fieldset.classList.add(".pointers-disabled");
         submitButton.classList.add(".pointers-disabled");
         
+    }
+
+    function delayModal(modal, delay) {
+        setTimeout(() => modal.show(), delay);
     }
 
     myForm.addEventListener("submit", showData);

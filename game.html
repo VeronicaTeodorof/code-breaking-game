@@ -82,6 +82,29 @@
         </div>
     </div>
 
+    <!-- Lose Modal -->
+    <!-- Closing the modal would leave the player stranded on an overlay, so no close buttons have been added, the static backdrop prevents
+    closing by clicking outside the modal, and keyboard false prevents closing with escape -->
+    <div class="modal fade-in" id="loseModal" data-bs-backdrop="static"  data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content old-paper">
+                <div class="modal-body">
+                    <p class="display-1 text-center"> You Lost!</p>
+                    <p>Fear not Drake, but your ignorance...</p>
+                    <p>Rid it, and you shall pass!</p>
+                    <button type="button" class="btn modal-button" data-bs-dismiss="modal" onclick="location.href='game.html'">
+                        Play again
+                    </button>
+                </div>
+                 <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-button" data-bs-dismiss="modal">Review</button>
+                    <button type="button" class="btn modal-button" data-bs-dismiss="modal" onclick="location.href='index.html'">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Main -->
     <main>
         <!-- Div necessary for win situation, wraps up sections that need to fade out -->
