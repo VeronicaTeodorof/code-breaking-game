@@ -194,6 +194,11 @@ input[type="submit"] {
 #play-again-button:hover,
 .home-btn:hover {
     cursor: pointer;
+    color: var(--chest-brown);
+}
+
+.game-button:hover {
+   transform:scale(1.1);
 }
 
 /* Global styles */
@@ -272,7 +277,7 @@ h1 {
     /* max-width: 264px; */
     min-height: 42vh;
     position: absolute; 
-    top: 1%;
+    top: 4%;
     /* left: 20%; */
 }
 
@@ -351,42 +356,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-
 }
-
-/* Tooltips */
-/* Code adjusted from: https://www.w3schools.com/css/css_tooltip.asp */
-
-.tooltiptext {
-    visibility: hidden;
-    background-color: var(--dark-blue);
-    color: #fff;
-    text-align: center;
-    border: 1px solid white;
-    padding: 2px 5px;
-    position: absolute;
-    z-index: 1;
-    font-size: 1rem;
-    font-family: var(--primary-font);
-    bottom: 12%;
-}
-
-.read-tooltip {
-    margin-left: -70px;
-}
-
-.how-to-tooltip {
-    margin-left: -60px;
-}
-
-.home-tooltip {
-    margin-left: -40px; 
-}
-
-.game-button:hover .tooltiptext {
-  visibility: visible;
-}
-
 
 /* Modals */
 
@@ -655,7 +625,7 @@ h1 {
         margin-left: 0.7rem;
         margin-bottom:1.5rem;
     }
-
+}
 
 /* || Large screens only */
 @media screen and (min-width: 1024px){
@@ -672,4 +642,4 @@ h1 {
     }
 }
     
-}
+

@@ -15,16 +15,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const reviewWin = document.getElementById("review-win");
     let count = 10;
 
-    
-
-    cursorReady();
-
+    //cursor is set on the first input after submit event on all screen sizes
     submitButton.addEventListener("click", cursorReady);
-
+    //cursor is set on the first input when page loads only on large screens
+    cursorLargeScreens();
 
     // Sets the cursor ready for the user to type the first input
     function cursorReady() {
         document.getElementById("input1").focus();
+    }
+    
+    // Sets the cursor ready for the user to type the first input on large screens only
+    function cursorLargeScreens() {
+        if(window.innerWidth > 1024) {
+            cursorReady();
+        }
     }
 
     // Moves focus to the next input field after one digit has been inserted
