@@ -93,6 +93,109 @@
     }
 }
 
+/* || BUTTONS */
+button {
+    font-family: var(--primary-font);
+    letter-spacing: 0.1rem;
+}
+
+/* || Buttons on home page */
+
+#play-button {
+    color: var(--dark-blue);
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 0.5rem;
+    margin-top: 20px;
+    border-radius: 10%;
+    min-width: 120px;
+    position: absolute;
+    top:50%;
+    left: 33%;
+    animation: play-animation 1.5s ease-in 1;
+}
+
+@keyframes play-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Buttons on game page */
+/* Submit/Try button */
+
+input[type="submit"] {
+    background-color: var(--button-blue);
+    color: goldenrod;
+    font-family: var(--primary-font);
+    font-size: x-large;
+    min-height: 35px;
+    min-width: 45px;
+    letter-spacing: 0.1rem;
+    font-weight:500;
+    border: 1px solid gold;
+    margin-left: 0.7rem;
+}
+
+/* UI Buttons */
+.game-button {
+        min-width: 8vw;
+        min-height: 4vh;
+        font-size: 1.5rem;
+        padding: 0.3rem;
+        border-radius: 5px;
+        align-self: center;
+        margin: 1.5rem 0.8rem;
+}
+
+/* Modal Buttons */
+.modal-button {
+    background-color: var(--button-blue);
+    color: goldenrod;
+    font-size: medium;
+    min-height: 30px;
+    min-width: 35px;
+    font-weight:500;
+    border: 1px solid gold;
+    margin-top:0;
+    margin-left: 0.7rem;
+    margin-bottom:1.5rem;
+}
+
+/* Review screen button */
+#play-again-button {
+    top:50%;
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+    margin-top: 20px;
+    border-radius: 10%;
+    box-shadow: 3px 5px var(--prussian-blue);
+    min-width: 120px;
+}
+
+.home-btn {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+    margin-top: 40px;
+    border-radius: 10%;
+    box-shadow: 3px 5px var(--prussian-blue);
+    min-width: 120px;
+}
+
+/* Hover state */
+#play-button:hover,
+#play-again-button:hover,
+.home-btn:hover {
+    cursor: pointer;
+}
+
 /* Global styles */
  .home-body {
     min-height: 95vh;
@@ -223,22 +326,6 @@ h1 {
    
 }
 
-/* Remember to make a class for most of the styles below and apply to modal buttons */
-input[type="submit"] {
-    /* display: inline-block; */
-    background-color: var(--button-blue);
-    color: goldenrod;
-    font-family: var(--primary-font);
-    /* margin-top: 5px; */
-    font-size: x-large;
-    min-height: 35px;
-    min-width: 45px;
-    letter-spacing: 0.1rem;
-    font-weight:500;
-    border: 1px solid gold;
-    margin-left: 0.7rem;
-}
-
 .tries-left {
     color: white;
     font-size: 1.3rem;
@@ -252,44 +339,6 @@ input[type="submit"] {
 }
 
 
-/* Play button */
-#play-button {
-    font-family: var(--primary-font);
-    color: var(--dark-blue);
-    font-size: xx-large;
-    font-weight: bolder;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem;
-    margin-top: 20px;
-    border-radius: 10%;
-    box-shadow: 3px 5px var(--prussian-blue);
-    min-width: 120px;
-    position: absolute;
-    top:50%;
-    left: 33%;
-    animation: play-animation 1.5s ease-in 1;
-}
-
-@keyframes play-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#play-button:hover {
-    color: var(--chest-brown);
-    background-color: var(--treasure-yellow);
-    text-shadow: none;
-    font-weight: bold;
-
-}
-#play-button-div {
-    text-align: center;
-}
-
 /* Footer */
 .footer {
     min-height: 15vh;
@@ -298,22 +347,11 @@ input[type="submit"] {
     border-top-right-radius: 20%;
 }
 
-/* UI Buttons */
 .buttons-container {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 
-}
-
-.game-button {
-        min-width: 8vw;
-        min-height: 4vh;
-        font-size: 1.5rem;
-        padding: 0.3rem;
-        border-radius: 5px;
-        align-self: center;
-        margin: 1.5rem 0.8rem;
 }
 
 /* Tooltips */
@@ -373,24 +411,6 @@ input[type="submit"] {
     font-family: var(--primary-font);
     color: var(--dark-blue);
 }
-
-.modal-button {
-    background-color: var(--button-blue);
-    color: goldenrod;
-    font-family: var(--primary-font);
-    /* margin-top: 5px; */
-    font-size: medium;
-    min-height: 30px;
-    min-width: 35px;
-    letter-spacing: 0.1rem;
-    font-weight:500;
-    border: 1px solid gold;
-    margin-top:0;
-    margin-left: 0.7rem;
-    margin-bottom:1.5rem;
-}
-
-
 
 /* || Lose animation */
 
@@ -463,20 +483,7 @@ input[type="submit"] {
     }
 }
 
-/* Review screen */
-#play-again-button {
-    top:50%;
-    font-family: var(--primary-font);
-    color: var(--dark-blue);
-    font-size: 1.5rem;
-    font-weight: bolder;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem;
-    margin-top: 20px;
-    border-radius: 10%;
-    box-shadow: 3px 5px var(--prussian-blue);
-    min-width: 120px;
-}
+
 
 /* 404 PAGE */
 .error-header,
@@ -501,22 +508,6 @@ input[type="submit"] {
     letter-spacing: 0.1rem;
     -webkit-text-stroke: 1.5px var(--dark-blue);
 }
-
-.home-btn {
-    font-family: var(--primary-font);
-    color: var(--dark-blue);
-    font-size: 1.5rem;
-    font-weight: bolder;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem;
-    margin-top: 40px;
-    border-radius: 10%;
-    box-shadow: 3px 5px var(--prussian-blue);
-    min-width: 120px;
-}
-
-
-
 
 /*----------------------------------*/
 
