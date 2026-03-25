@@ -39,6 +39,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#w3c">W3C Validation</a>
 - JavaScript Validation
 - <a href="lighthouse">Lighthouse</a>
+- <a href="accessibility">Accessibility</a>
 - Behaviour Driven Development and Testing User Stories
 - Test Driven Development
 
@@ -252,6 +253,8 @@ https://imagecolorpicker.com/ for picking colors from images
 
 https://www.favicon-generator.org/ for generating the favicon used on the site
 
+https://wave.webaim.org/ and lighthouse to test accessibility
+
 ## <h2 id="deployment-and-development">6. Deployment and Local Development
 ### <h3 id="deployment">Deployment</h3>
 
@@ -397,6 +400,11 @@ During second phase development lifecycle lighthouse tests revealed some accessi
 After changing button size and margin, the accessibility issue was solved:
 [mobile lighthouse after](readme-assets/second-phase/mobile-lighthouse-after.png), 
 [desktop lighthouse after](readme-assets/second-phase/desktop-lighthouse-after.png).
+
+### <h3 id="accessibility">Accessibility</h3>
+-<main> was added to 404.html as sugessted by lighthouse;
+- headers were added to win and lose modals as suggested by https://wave.webaim.org/;
+- legend was added to fieldset and labels to inputs as suggested by lighthouse and https://wave.webaim.org/, with "visually-hidden" bootstrap class, so that they are only visible to screen readers.
 
 ## <h2 id="credits2">8. Credits</h2>
 ### <h3 id = "resources">Resources</h2>

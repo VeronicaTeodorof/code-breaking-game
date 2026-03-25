@@ -92,6 +92,7 @@
         opacity: 1;
     }
 }
+
 /* Global styles */
  .home-body {
     min-height: 95vh;
@@ -478,7 +479,8 @@ input[type="submit"] {
 }
 
 /* 404 PAGE */
-.error-header {
+.error-header,
+.error-main  {
     text-align: center;
 }
 .error-body {

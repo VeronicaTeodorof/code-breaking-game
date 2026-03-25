@@ -89,7 +89,7 @@
         <div class="modal-dialog">
             <div class="modal-content old-paper">
                 <div class="modal-body">
-                    <p class="display-1 text-center"> You Fool!</p>
+                    <h2 class="text-center display-1"> You, Fool!</h2>
                     <p>Fear not Drake, but your ignorance...</p>
                     <p>Rid it, and you shall pass!</p>
                 </div>
@@ -109,7 +109,7 @@
         <div class="modal-dialog">
             <div class="modal-content old-paper">
                 <div class="modal-body text-center">
-                    <p class="display-5"> Welcome to the Enchanted Realm!</p>
+                    <h2 class="display-5"> Welcome to the Enchanted Realm!</h2>
                     <p>Your WISDOM is the gate opener,</p>
                     <p>Your COURAGE, the dragon tamer,</p>
                     <p>Your TRUE HEART, the light kindler!</p>
@@ -188,19 +188,25 @@
                     <form id="guess-form" class="guess-form">
                         <!-- <fieldset> added to wrap all inputs in order to be targeted by disableForm() function in js -->
                         <fieldset class="input-wrapper">
-                        <!-- input mode="numeric" makes virtual keyboard dispaly numeric values only;
-                        This was needed in order to save space (10 to 20% of screen height) on mobile devices.
-                        Code was taken from stackoverflow and suggested by Kevin Loughrey -->
-                            <input id="input1" name="input1" type="number" inputmode="numeric" class="input" aria-labelledby="input1"  min="0" max="9" required>
-                            <input id="input2" name="input2" type="number" inputmode="numeric" class="input" aria-labelledby="input2"  min="0" max="9" required>
-                            <input id="input3" name="input3" type="number" inputmode="numeric" class="input" aria-labelledby="input3"  min="0" max="9" required>
-                            <input id="input4" name="input4" type="number" inputmode="numeric" class="input" aria-labelledby="input4"  min="0" max="9" required>
+                            <!-- legend and labels added for accessibility reasons, but only visible to screen readers, using bootstrap "visually hidden" class-->
+                            <legend class="visually-hidden">Enter guess here</legend>
+                            <!-- input mode="numeric" makes virtual keyboard dispaly numeric values only;
+                            This was needed in order to save space (10 to 20% of screen height) on mobile devices.
+                            Code was taken from stackoverflow and suggested by Kevin Loughrey -->
+                            <label for="input1" class="visually-hidden">Guess digit 1</label>
+                            <input id="input1" name="input1" type="number" inputmode="numeric" class="input" min="0" max="9" required>
+                            <label for="input2" class="visually-hidden">Guess digit 1</label>
+                            <input id="input2" name="input2" type="number" inputmode="numeric" class="input" min="0" max="9" required>
+                            <label for="input3" class="visually-hidden">Guess digit 1</label>
+                            <input id="input3" name="input3" type="number" inputmode="numeric" class="input" min="0" max="9" required>
+                            <label for="input4" class="visually-hidden">Guess digit 1</label>
+                            <input id="input4" name="input4" type="number" inputmode="numeric" class="input" min="0" max="9" required>
                             <input id="submit" type="submit" value="Try">
                         </fieldset>
                     </form>
                 </div>
                 <div class="tries-wrapper">
-                    <p class="tries-left position-absolute start-50 translate-middle-x">10 tries</p>
+                    <h2 class="tries-left position-absolute start-50 translate-middle-x">10 tries</h2>
                 </div>
             </section>
         </div>
