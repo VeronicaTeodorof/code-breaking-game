@@ -274,6 +274,10 @@ Instructions on how to achieve this can be found below:
  ### <h3 id="full-testing">Full Testing</h3>
  After implementing second phase design, my tutor's feedback was that I should keep the submit button everywhere (I intended to remove it completely from the mobile view because of the lack of space); he said that mobile users do not use the enter key on a virtual keyboard much and therefore I needed a dedicated button that I could even align with the form inputs to save space.  He also suggested increasing font size of the feedback and guess on the desktop view and changing some colous in the feedback for better visibility.
 
+ **Instructions**
+ I gave the almost finished game to a few friends and family to try. It so happened that none of them had played a Mastermind type of game before, and they all (100%) found the game confusing. Although I had mentioned in the instructions that the order of the symbols in the feedback does not relate to the order of the digits in the guess, they all believed the opposite. After chatting with Claude AI, it pointed to some gaps in my instructions: the missing digit range, not mentioning that repeated digits are allowed, not giving examples. I adjusted my instructions to include the above and I gave the example: secret key 9981, guess key 8881 gives feedback ⚪⚪❌❌, which is for most counterintuitive, 
+ but I hope it catches the essence of the game. Now waiting for feedback for the adjusted instructions...
+
 
 ### <h3 id="solved-bugs">Solved Bugs</h3>
 
