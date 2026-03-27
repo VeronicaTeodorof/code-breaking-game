@@ -205,7 +205,7 @@ When losing, an animation is started: dark background - dragon image - dark back
 Here are the images and the modal: 
 
 <img src="assets/images/drake1.webp" style="height:400px">
-<img src="assets/images/fire-background1.webp" style="height:400">
+<img src="assets/images/fire-background1.webp" style="height:300">
 <img src="readme-assets/second-phase/losing-modal.png" style="height:400px">
 
 A similar modal, with a different message, is displayed when winning, after the Enchanted Realm image is revealed.
@@ -241,13 +241,6 @@ In the second phase kept "Roboto" style as a primary font and tried a few fonts 
 
 
 ### <h3 id="colours">Colour Scheme</h3>
-With the imagery of the final product in mind, for the MVP I chose a colour pallette inspired by dragons and riches: "dragon-green"= #0B870D, "chest-brown"= #46211C, "treasure-gold"= #FFD700, and "contrast-red"= #FF0000 ([see initial pallette here](readme-assets/first-phase/codebreaker-game-pallette.png)).
-
-As there wasn't sufficient contrast between text and background, after checking contrast in Coolors ([see here](readme-assets/first-phase/contrast-check-heading.png)), I updated the colour pallette to:
-
-<img src="readme-assets/first-phase/codebreaking-game-pallette2.png">
-
-
 
 In the second phase of the game, after trying a few different outlays, I decided to use the background image of the game page as the starting point of my design. I did not have a preset colour scheme. I picked two colours from the enchanted-realm image, var dark-blue and var heading-light-blue. I made a gradient out of the two in coolors.com: 
 
