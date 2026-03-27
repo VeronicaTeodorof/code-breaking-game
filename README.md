@@ -1,11 +1,14 @@
 # Dragons' Treasure
 *for my team*
 
->>>>>>>>> "Drake guards the entrance to the Enchanted Realm where all the dragons' riches lie.<br>
+
 >
->>>>>>>>>> Guess the 4 digit key in 10 tries or less, and he'll let you pass.
+> Drake guards the entrance to the Enchanted Realm where all the dragons' riches lie.<br>
 >
->>>>>>>>>>>Fail, and... well, better not fail..."
+> Guess the 4 digit key in 10 tries or less, and he'll let you pass.
+>
+> Fail, and... well, better not fail...
+
 
 **Dragons' Treasure** is a computer codebreaking game similar to the paper and pencil game [bulls and cows](https://en.wikipedia.org/wiki/Bulls_and_cows) or [pigs and bulls](https://en.wikipedia.org/wiki/Bulls_and_cows) in that it uses digits for the code, the difference being that in the paper and pencil game digits must be all different, while in the computer version repetitions are permitted. In this aspect this game is more similar to the board game [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game)), which uses colours for the code and repetitions are permitted.
 
@@ -106,17 +109,25 @@ The first phase aimed to deliver the MVP, a fully functional game with only stri
 My tutor, Kevin Loughrey, suggested I started with writing down the pseudo-code for the game.<br>
 When that was ready, I put the basic css, html structure in place, the scaffolding for testing the functionality of the game.<br>
 Then came the basic functionality.<br>
-At this point some styling would have been the last part of the MVP, but I decided to jump to the next phase, and style in the context of the story I wanted to tell in my game.
+At this point some styling would have been the last part of the MVP, but I decided to jump to the next phase, and style in the context of the story I wanted to tell.
 
-The second phase started with some failed attempts, a short time break (sometimes the world throws at you obstacles to overcome, just like in the stories you're writing about) and a change in mentality: I started to consider using AI due to time constraints.<br>
-And then the magic happened, just like in the stories you're writing about; a magic combination of chance, healing spells, and team spirit.<br>
-I found the book "Dragon World" and I understood what a dragon treasure should look like; I started looking for it, and I found my winning image, an AI generated one, which normally would have been enough to make me reject it, but I didn't; and from there everything started to connect.
+The second phase started with some failed attempts, a short time break (sometimes the world throws at you obstacles to overcome, just like in the stories you're writing about), and a change in mentality: I started to consider using AI due to time constraints.<br>
+And then the magic happened (just like in the stories you're writing about); a magic combination of chance, healing spells, and team spirit.<br>
+I found the book "Dragon World" and I understood what a dragon treasure should look like. I started looking for it, and I found my winning image, an AI generated one, which normally would have been enough to make me reject it, but I didn't. And from there everything started to connect.
 
 ### <h3 id="in-the-game">The Story in the Game</h3>
-You are finally there, the Enchanted Realm lies before your eyes, and you can almost see its glows through the dark gate. Drake is there to guard.<br>.
-If you only knew the secret key...You've got ten tries to find it.<br>
-You fail, a frightening experience, but you learn that neither the gate, nor the dragon are the real obstacles; it is you, you have to better yourself!<br>
-You find the key, and you realize the Enchanted Realm was within you all the time; you understand that your qualities (your wisdom, your courage and your true heart) are your riches, your treasure.<br>
+You are finally there, the Enchanted Realm lies before your eyes, and you can almost see its glows through the dark gate. Drake is there to guard.
+
+
+If you only knew the secret key...You've got ten tries to find it.
+
+
+You fail, a frightening experience, but you learn that neither the gate, nor the dragon are the real obstacles; it is you, you have to better yourself!
+
+
+You find the key, and you realize the Enchanted Realm was within you all the time; you understand that your qualities (your wisdom, your courage and your true heart) are your riches, your treasure.
+
+
 Don't ever lose it!
 
 ## <h2 id="design">3. Design</h2>
@@ -124,7 +135,7 @@ Don't ever lose it!
 ### <h3 id="features">Features</h3>
 The game includes three fully responsive pages: index.html, game.html and 404.html.
 
-Index.html page has the following features: a heading with the title of the game, an image of a dragon's shadow, an image of a treasure chest and a play button, which links the game.html page.
+**Index.html page** has the following features: a heading with the title of the game, an image of a dragon's shadow, an image of a treasure chest and a play button, which links the game.html page.
 <pre>
 <img src="readme-assets/second-phase/home-page-mobile.png" style="height:400px;"> 
 <img src="readme-assets/second-phase/home-page-tablet.png" style="height:400px;">
@@ -136,7 +147,7 @@ For desktop view the page also includes the image of a dragon's head placed on t
 <img src="readme-assets/second-phase/home-page-desktop.png">
 
 
-Game.html page has as a background image what I've called the Enchanted Realm:
+**Game.html** page has as a background image what I've called the Enchanted Realm:
 
 <img src="assets/images/enchanted-realm.webp">
 
@@ -161,14 +172,20 @@ Once the guess is submitted, the 4 digit try and corresponding feedback are disp
 <img src="readme-assets/second-phase/feedback-desktop.png">
 
 <img src="readme-assets/second-phase/feedback-mobile.png" style="height:400px;">
+<img src="readme-assets/second-phase/feedback-tablet.png" style="height:400px;">
 
 
-The game page also features 3 user interface buttons. 
+The number of tries left is displayed under the input fields:
+
+<img src="readme-assets/second-phase/tries-left.png">
+
+The game page also features 3 user interface buttons:
 
 <img src="readme-assets/second-phase/buttons.png">
 
 
-One of them has a dragon symbol and opens a story modal when clicked.
+One of them has a dragon symbol and opens the story modal:
+
 
 <img src="readme-assets/second-phase/story-mobile.png">
 
@@ -177,12 +194,45 @@ One of them has a dragon symbol and opens a story modal when clicked.
 
 The second one has a question mark symbol and opens an instructions modal.
 
-<img src="readme-assets/second-phase/instructions-mobile.png" style="height:400px;">
+<img src="readme-assets/second-phase/instructions-tablet.png" style="height:400px;">
+<img src="readme-assets/second-phase/instructions-desktop.png" style="height:400px">
 
-<img src="readme-assets/second-phase/instructions-desktop.png">
 
 
 And the third one is a link to home page.
+
+When losing, an animation is started: dark background - dragon image - dark background - fire image - dark background - losing message modal.<br>
+Here are the images and the modal: 
+
+<img src="assets/images/drake1.webp" style="height:400px">
+<img src="assets/images/fire-background1.webp" style="height:400">
+<img src="readme-assets/second-phase/losing-modal.png" style="height:400px">
+
+A similar modal, with a different message, is displayed when winning, after the Enchanted Realm image is revealed.
+
+<img src="readme-assets/second-phase/win-modal.png" style="height:400px">
+
+Both modals have 3 buttons: a play again button which links to game.html, a review button, which opens a review screen, and a home button, which links to index.html.
+
+The review screen is the game page with a few changes: the input fields are removed and replaced with a play again button, which reloads the page and restarts the game, and the tries left feature is replaced by the solution key, allowing players to review their guesses against it.
+
+<img src="readme-assets/second-phase/review-mobile.png" style="height:400px">
+<img src="readme-assets/second-phase/review-tablet.png" style="height:400px">
+<img src="readme-assets/second-phase/review-desktop.png" style="height:400px">
+
+
+**404.html page** has the blue gradient of the home page mobile view, but repeated horizontally, as if broken, the image of the dragon shadow, the text: No Treasure Here and a Return Home button that links to index.html page.
+
+<img src="readme-assets/second-phase/mobile404.png" style="height:400px">
+<img src="readme-assets/second-phase/tablet404.png" style="height:400px">
+<img src="readme-assets/second-phase/desktop404.png" style=height:400px">
+
+
+
+
+
+
+
 
 ### <h3 id="typography">Typography</h3>
 I first experimented with the playful "Mistery Quest" Google Font for heading paired with the contrasting sans-serif "Roboto" for everything else.
