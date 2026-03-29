@@ -167,10 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const feedback = document.querySelector(".feedback-span");
         // Writes feedback in feedback area
         feedback.innerText = (
-            whiteDot.repeat(correctedAnswer[0]) +
-            " " + redDot.repeat(correctedAnswer[1]) +
-            " " + redX.repeat(correctedAnswer[2])
-        );
+            correctedAnswer[0] + " x " + whiteDot + " | " + 
+            correctedAnswer[1] + " x " + redDot);
         // Removes class from occupied feedback span so the next is selected
         feedback.classList.remove("feedback-span");
     }
