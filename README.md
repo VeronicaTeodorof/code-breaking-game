@@ -34,6 +34,7 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#typography">Typography</a>
 - <a href="#colours">Colour Scheme</a>
 - <a href="#animations">Animations</a>
+- <a href="interactivity">Interactivity</a>
 - <a href="#wireframes">Wireframes</a>
 
 ### <a href="#functionality">4. Functionality
