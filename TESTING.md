@@ -1,4 +1,6 @@
-## Navigation / Link Testing
+## UI Testing
+
+### Navigation / Link Testing
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -12,8 +14,6 @@
 | NAV-08 | Click Play again button on win modal | game.html reloads and new game starts | Pass |
 | NAV-09 | Click Play again button on review screen | game.html reloads and new game starts | Pass |
 
-
-## UI / Interaction Testing
 
 ### Modal Behaviour
 
@@ -79,6 +79,39 @@
 | UI-35 | Lose animation | Dark background fades in, image 1 appears and disappears, image 2 appears and disappears, lose modal appears at the end of the animation | Pass |
 | UI-36 | Lose modal | Lose message and play again, review, and home buttons are displayed | Pass |
 | UI-37 | Review | Modal disappears, board is revealed, play again button is revealed, key is revealed, footer with game buttons are revealed, pointers on buttons are active | Pass |
+
+
+## Unit Testing
+
+### Code Generation - generateCode()
+
+| Test ID | Description | Expected Output | Actual Output | Pass/Fail |
+| ------- | ---- | --------------- | --------- | ------- |
+| UT-01 | generateCode() returns a 4 element array with digits 0-9 | Array of 4 digits e.g.[0,1,2,3] | [6,9,3,7] | Pass |
+
+### Input Retrieval - processData()
+
+| Test ID | Description | Expected Output | Actual Output | Pass/Fail |
+| ------- | ---- | --------------- | --------- | ------- |
+| UT-02 | processData() | correctly retrieves inputs as guessCode array | Inputs are correctly retrieved and parsed as integers e.g. [1,2,3,4] | [1,2,3,4] | Pass |
+
+### Algorithm checkAnswer()
+
+| Test ID | Description | computerCode | guessCode | Expected Output | Actual Output | Pass/Fail |
+| ------- | ---- | --------------- | --------- | ------- | ----- | ------- |
+| UT-03 | Checks the number of correct digits in guessCode | [5,6,6,8] | [1,2,3,4] | numCorrect: 0 | numCorrect: 0 | Pass |
+| UT-04 | Checks that all digits other than correctly guessed ones in guessCode are pushed into the splicedGuessCode | [8,9,7,5] | [8,1,2,3] | 1,2,3 | 1,2,3 | Pass |
+| UT-05 | Checks that all digits other than correctly guessed ones in computerCode are pushed into the splicedComputerCode | [0,9,5,9] | [0,1,2,3] | 9,5,9 | 9,5,9| Pass |
+| UT-06 | Checks the number of incorrectly placed digits in guessCode | [9,2,0,8] | [0,1,2,3] | numIncorrectlyPlaced: 2 | numIncorrectlyPlaced: 2 | Pass |
+| UT-07 | Mix of correct, incorrectly placed, and incorrect digits | [0,5,0,1] | [0,1,2,3] | [1,1,2] | [1,1,2] | Pass |
+| UT-08 | All correct digits in correct positions | [5,7,8,3] | [5,7,8,3] | [4,0,0,] | [4,0,0] | Pass |
+| UT-09 | No correct digits | [1,2,3,4] | [5,6,7,8] | [0,0,4] | [0,0,4] | Pass |
+| UT-10 | All correct digits in wrong positions | [8,0,2,0] | [0,2,0,8] | [0,4,0] | [0,4,0] | Pass |
+| UT-11 | Repeated digit in guessCode, not in computerCode | [1,5,9,4] | [1,1,5,6] | [1,1,2] | [1,1,2] | Pass |
+| UT-12 | Repeated digit in computerCode, not in guessCode | [9,9,6,9] | [1,9,2,3] | [1,0,3] | [1,0,3] | Pass |
+| UT-13 | Guesscode with all identical digits | [0,4,8,1] | [0,0,0,0] | [1,0,3] |[1,0,3] | Pass |
+
+
 
 
 
