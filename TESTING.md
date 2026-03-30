@@ -2,14 +2,15 @@
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| NAV-01  | Click Play button on home page | Navigates to game.html | Pass |
-| NAV-02 | Click Home button (Home) on game page | Returns to index.html | Pass |
-| NAV-03 | Click Home button on loss modal | Returns to index.html | Pass |
-| NAV-04 | Click Home button on win modal | Returns to index.html | Pass |
-| NAV-05 | Click Return home button on 404 page | Returns to index.html | Pass |
-| NAV-06 | Click Play again button on loss modal | game.html reloads and new game starts | Pass |
-| NAV-07 | Click Play again button on win modal | game.html reloads and new game starts | Pass |
-| NAV-08 | Click Play again button on review screen | game.html reloads and new game starts | Pass |
+| NAV-01 | Navigating to a non-existent URL path | Custom 404 page is displayed | Pass |
+| NAV-02 | Click Play button on home page | Navigates to game.html | Pass |
+| NAV-03 | Click Home button (Home) on game page | Returns to index.html | Pass |
+| NAV-04 | Click Home button on loss modal | Returns to index.html | Pass |
+| NAV-05 | Click Home button on win modal | Returns to index.html | Pass |
+| NAV-06 | Click Return home button on 404 page | Returns to index.html | Pass |
+| NAV-07 | Click Play again button on loss modal | game.html reloads and new game starts | Pass |
+| NAV-08 | Click Play again button on win modal | game.html reloads and new game starts | Pass |
+| NAV-09 | Click Play again button on review screen | game.html reloads and new game starts | Pass |
 
 
 ## UI / Interaction Testing
@@ -65,9 +66,19 @@
 | UI-28 | Cleared inputs after submission | Inputs are cleared after each submission, page is not reloaded | Pass |
 | UI-29 | Correct guess (1st to 10th) | Submits successfully, win animation is triggered immediately | Pass |
 | UI-30 | 10th incorrect guess | Submits successfully, lose animation is triggered immediately | Pass |
+| UI-31 | Initial tries count | Displays 10 tries | Pass |
+| UI-32 | Tries count after each submission | Decrements correctly after each submission | Pass |
 
 
+### Game Over
 
+| Test ID | Test | Expected Result | Pass/Fail |
+| ------- | ---- | --------------- | --------- |
+| UI-33 | Win animation | Overlay and image, feedback, form, tries count, and footer with buttons disappear, form and pointers are disabled on inputs and buttons, win modal appears at the end of the animation | Pass |
+| UI-34 | Win modal | Win message and play again, review, and home buttons are displayed | Pass |
+| UI-35 | Lose animation | Dark background fades in, image 1 appears and disappears, image 2 appears and disappears, lose modal appears at the end of the animation | Pass |
+| UI-36 | Lose modal | Lose message and play again, review, and home buttons are displayed | Pass |
+| UI-37 | Review | Modal disappears, board is revealed, play again button is revealed, key is revealed, footer with game buttons are revealed, pointers on buttons are active | Pass |
 
 
 
