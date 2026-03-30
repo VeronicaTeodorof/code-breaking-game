@@ -1,3 +1,24 @@
+## Table of Contents
+
+1. UI Testing
+   - Navigation / Link Testing
+   - Modal Behaviour
+   - Hover States of Buttons
+   - Input Focus Behaviour
+   - Input Validation
+   - Guess Submission and Feedback
+   - Game Over
+   - Game Logic
+2. Unit Testing
+   - Code Generation - generateCode()
+   - Input Retrieval - processData()
+   - Algorithm - checkAnswer()
+3. Responsiveness
+   - Home Page
+   - Game Page
+   - 404 Page
+
+
 ## UI Testing
 
 ### Navigation / Link Testing
@@ -22,75 +43,75 @@
 | UI-01 | Click dragon button on game page | The Story modal opens | Pass |
 | UI-02 | Click ? button on game page | How to play modal opens | Pass |
 | UI-03 | Close The Story modal (Click close button, X, backdrop, press Esc) on game page | Each action closes modal | Pass |
-| UI-07 | Close How to Play modal (Click close button, X, backdrop, press Esc) on game page | Each action closes modal | Pass |
-| UI-08 | Win modal - backdrop click does not close the modal | Modal doesn't close | Pass |
-| UI-09 | Win modal - Esc key does not close modal | Modal doesn't close | Pass |
-| UI-10 | Loss modal - backdrop click does not close the modal | Modal doesn't close | Pass |
-| UI-11 | Loss modal - Esc key does not close modal | Modal doesn't close | Pass |
+| UI-04 | Close How to Play modal (Click close button, X, backdrop, press Esc) on game page | Each action closes modal | Pass |
+| UI-05 | Win modal - backdrop click does not close the modal | Modal doesn't close | Pass |
+| UI-06 | Win modal - Esc key does not close modal | Modal doesn't close | Pass |
+| UI-07 | Loss modal - backdrop click does not close the modal | Modal doesn't close | Pass |
+| UI-08 | Loss modal - Esc key does not close modal | Modal doesn't close | Pass |
 
 ### Hover States of Buttons
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| UI-12 | Play (homepage), Play again (review screen), Return home (404 page) | Subtle change in text colour and cursor changes to pointer | Pass |
-| UI-13 | Try button (gamepage) | Cursor changes to pointer | Pass |
-| UI-14 | Dragon button, ? button, home button (gamepage) | Buttons scale and cursor changes to pointer | Pass |
-| UI-15| All modal buttons | No background colour, text changes colour, cursor changes to pointer | Pass | 
+| UI-09 | Play (homepage), Play again (review screen), Return home (404 page) | Subtle change in text colour and cursor changes to pointer | Pass |
+| UI-10 | Try button (gamepage) | Cursor changes to pointer | Pass |
+| UI-11 | Dragon button, ? button, home button (gamepage) | Buttons scale and cursor changes to pointer | Pass |
+| UI-12 | All modal buttons | No background colour, text changes colour, cursor changes to pointer | Pass | 
 
 ### Input Focus Behaviour 
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| UI-16 | Mobile/tablet — no auto-focus on first input on load | No auto-focus on load | Pass |
-| UI-17 | Desktop — auto-focus on first input on load | Auto-focus on load | Pass |
-| UI-18 | All devices - focus returns on first input after submit | First input focused after submit | Pass |
-| UI-19 | Focus moves to the next empty input | Focus moves to next empty input after a character is entered| Pass |
+| UI-13 | Mobile/tablet — no auto-focus on first input on load | No auto-focus on load | Pass |
+| UI-14 | Desktop — auto-focus on first input on load | Auto-focus on load | Pass |
+| UI-15 | All devices - focus returns on first input after submit | First input focused after submit | Pass |
+| UI-16 | Focus moves to the next empty input | Focus moves to next empty input after a character is entered| Pass |
 
 ### Input Validation
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| UI-20 | Submission of guess containing empty field(s) | Does not submit, appropriate feedback is given | Pass |
-| UI-21 | Submission of guess containing "e" via keyboard input and paste | Character is permitted as input, but does not submit, appropriate feedback is given | Pass |
-| UI-22 | Submission of guess containing "-" or negative numbers via keyboard input and paste | Character is permitted as input, but does not submit, appropriate feedback is given | Pass |
-| UI-23 | Submission of guess containing "." or decimal numbers via keyboard input and paste | Character is permitted as input, but does not submit, appropriate feedback is given | Pass |
-| UI-24 | Submission of guess containing letters, special characters and spaces | Letters other than "e", special characters other than "-" and ".", and spaces are blocked | Pass |
-| UI-25 | Submission of guess containing more than one digit numbers via keyboard input and paste | Permitted as input, but do not submit, appropriate feedback is given | Pass |
+| UI-17 | Submission of guess containing empty field(s) | Does not submit, appropriate feedback is given | Pass |
+| UI-18 | Submission of guess containing "e" via keyboard input and paste | Character is permitted as input, but does not submit, appropriate feedback is given | Pass |
+| UI-19 | Submission of guess containing "-" or negative numbers via keyboard input and paste | Character is permitted as input, but does not submit, appropriate feedback is given | Pass |
+| UI-20 | Submission of guess containing "." or decimal numbers via keyboard input and paste | Character is permitted as input, but does not submit, appropriate feedback is given | Pass |
+| UI-21 | Submission of guess containing letters, special characters and spaces | Letters other than "e", special characters other than "-" and ".", and spaces are blocked | Pass |
+| UI-22 | Submission of guess containing more than one digit numbers via keyboard input and paste | Permitted as input, but do not submit, appropriate feedback is given | Pass |
 
 ### Guess Submission and Feedback 
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| UI-26 | First valid guess | Submits successfully, guess and feedback are displayed in feedback area | Pass |
-| UI-27 | 2nd - 9th valid guesses | Each submits successfully, guess and feedback are displayed in feedback area, all previous guesses remain visible and stacked | Pass |
-| UI-28 | Cleared inputs after submission | Inputs are cleared after each submission, page is not reloaded | Pass |
-| UI-29 | Correct guess (1st to 10th) | Submits successfully, win animation is triggered immediately | Pass |
-| UI-30 | 10th incorrect guess | Submits successfully, lose animation is triggered immediately | Pass |
-| UI-31 | Initial tries count | Displays 10 tries | Pass |
-| UI-32 | Tries count after each submission | Decrements correctly after each submission | Pass |
+| UI-23 | First valid guess | Submits successfully, guess and feedback are displayed in feedback area | Pass |
+| UI-24 | 2nd - 9th valid guesses | Each submits successfully, guess and feedback are displayed in feedback area, all previous guesses remain visible and stacked | Pass |
+| UI-25 | Cleared inputs after submission | Inputs are cleared after each submission, page is not reloaded | Pass |
+| UI-26 | Correct guess (1st to 10th) | Submits successfully, win animation is triggered immediately | Pass |
+| UI-27 | 10th incorrect guess | Submits successfully, lose animation is triggered immediately | Pass |
+| UI-28 | Initial tries count | Displays 10 tries | Pass |
+| UI-29 | Tries count after each submission | Decrements correctly after each submission | Pass |
 
 
 ### Game Over
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| UI-33 | Win animation | Overlay and image, feedback, form, tries count, and footer with buttons disappear, form and pointers are disabled on inputs and buttons, win modal appears at the end of the animation | Pass |
-| UI-34 | Win modal | Win message and play again, review, and home buttons are displayed | Pass |
-| UI-35 | Lose animation | Dark background fades in, image 1 appears and disappears, image 2 appears and disappears, lose modal appears at the end of the animation | Pass |
-| UI-36 | Lose modal | Lose message and play again, review, and home buttons are displayed | Pass |
-| UI-37 | Review | Modal disappears, board is revealed, play again button is revealed, key is revealed, footer with game buttons are revealed, pointers on buttons are active | Pass |
+| UI-30 | Win animation | Overlay and image, feedback, form, tries count, and footer with buttons disappear, form and pointers are disabled on inputs and buttons, win modal appears at the end of the animation | Pass |
+| UI-31 | Win modal | Win message and play again, review, and home buttons are displayed | Pass |
+| UI-32 | Lose animation | Dark background fades in, image 1 appears and disappears, image 2 appears and disappears, lose modal appears at the end of the animation | Pass |
+| UI-33 | Lose modal | Lose message and play again, review, and home buttons are displayed | Pass |
+| UI-34 | Review | Modal disappears, board is revealed, play again button is revealed, key is revealed, footer with game buttons are revealed, pointers on buttons are active | Pass |
 
 ### Game Logic
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
-| GL-01 | All correct digits in correct positions (computerCode: 3,9,4,3, guessCode: 3,9,4,3) | 4 white dots, 0 red dots, win condition triggered | Pass |
-| GL-02 | All incorrect digits (computerCode: 7,6,2,3 guessCode: 0,1,4,8) | 0 white dots, 0 red dots | Pass |
-| GL-03 | All correct digits in wrong positions (computerCode: 7,6,2,3 guessCode: 6,3,7,2) | 0 white dots, 4 red dots | Pass |
-| GL-04 | Mix of correct and incorrect digits (computerCode: 3,9,4,3, guessCode: 3,4,7,8) | 1 white dot and 1 red dot displayed | Pass |
-| GL-05 | Repeated digit in guessCode, not in computerCode (computerCode 1,2,3,4, guessCode 1,1,2,3) | 1 white dot, 2 red dots | Pass |
-| GL-06 | Repeated digit in computerCode, not in guessCode (computerCode 1,1,2,3, guessCode 1,2,3,4) | 1 white dot, 2 red dots | Pass |
-| GL-07 | Guess with all identical digits (computerCode: 0,9,4,3, guessCode: 0,0,0,0) | 1 white dot, 0 red dots | Pass |
+| UI-35 | All correct digits in correct positions (computerCode: 3,9,4,3, guessCode: 3,9,4,3) | 4 white dots, 0 red dots, win condition triggered | Pass |
+| UI-36 | All incorrect digits (computerCode: 7,6,2,3 guessCode: 0,1,4,8) | 0 white dots, 0 red dots | Pass |
+| UI-37 | All correct digits in wrong positions (computerCode: 7,6,2,3 guessCode: 6,3,7,2) | 0 white dots, 4 red dots | Pass |
+| UI-38 | Mix of correct and incorrect digits (computerCode: 3,9,4,3, guessCode: 3,4,7,8) | 1 white dot and 1 red dot displayed | Pass |
+| UI-39 | Repeated digit in guessCode, not in computerCode (computerCode 1,2,3,4, guessCode 1,1,2,3) | 1 white dot, 2 red dots | Pass |
+| UI-40 | Repeated digit in computerCode, not in guessCode (computerCode 1,1,2,3, guessCode 1,2,3,4) | 1 white dot, 2 red dots | Pass |
+| UI-41 | Guess with all identical digits (computerCode: 0,9,4,3, guessCode: 0,0,0,0) | 1 white dot, 0 red dots | Pass |
 
 
 ## Unit Testing
@@ -107,7 +128,7 @@
 | ------- | ---- | --------------- | --------- | ------- |
 | UT-02 | processData() correctly retrieves inputs as guessCode array | Inputs are correctly retrieved and parsed as integers e.g. [1,2,3,4] | [1,2,3,4] | Pass |
 
-### Algorithm checkAnswer()
+### Algorithm - checkAnswer()
 
 | Test ID | Description | computerCode | guessCode | Expected Output | Actual Output | Pass/Fail |
 | ------- | ---- | --------------- | --------- | ------- | ----- | ------- |
@@ -121,7 +142,31 @@
 | UT-10 | All correct digits in wrong positions | [8,0,2,0] | [0,2,0,8] | [0,4,0] | [0,4,0] | Pass |
 | UT-11 | Repeated digit in guessCode, not in computerCode | [1,5,9,4] | [1,1,5,6] | [1,1,2] | [1,1,2] | Pass |
 | UT-12 | Repeated digit in computerCode, not in guessCode | [9,9,6,9] | [1,9,2,3] | [1,0,3] | [1,0,3] | Pass |
-| UT-13 | Guesscode with all identical digits | [0,4,8,1] | [0,0,0,0] | [1,0,3] |[1,0,3] | Pass |
+| UT-13 | guessCode with all identical digits | [0,4,8,1] | [0,0,0,0] | [1,0,3] |[1,0,3] | Pass |
+
+
+## Responsiveness
+
+### Home Page
+
+| Test ID | Breakpoint | Test | Expected Result | Pass/Fail |
+| ------- | ---------- | ---- | --------------- | --------- |
+| RES-01 | Mobile (below 760px) | Home page layout | Blue gradient background, dragon silhouette  visible, h1 in dark blue, play button centered below title, treasure chest bottom center | Pass |
+| RES-02 | Tablet (760px-1024px) | Home page layout | Dark navy background, larger h1 in light blue, play button repositioned to right of treasure chest, faint dragon silhouette on right | Pass |
+| RES-03 | Desktop (1024px+) | Home page layout | Dark navy background, h1 on one line, large dragon image on right, treasure chest and play button on left | Pass |
+
+### Game Page
+
+| Test ID | Breakpoint | Test | Expected Result | Pass/Fail |
+| ------- | ---------- | ---- | --------------- | --------- |
+| RES-04 | Mobile (below 760px) | Feedback section layout | Single column layout | Pass |
+| RES-05 | Tablet and Desktop (760px+) | Feedback section layout | Two column layout | Pass |
+
+### 404 Page
+
+| Test ID | Test | Expected Result | Pass/Fail |
+| ------- | ---- | --------------- | --------- |
+| RES-06 | 404 page across all breakpoints | Page displays correctly across all screen sizes | Pass |
 
 
 
