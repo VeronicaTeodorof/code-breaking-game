@@ -53,7 +53,6 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#w3c">W3C Validation</a>
 - <a href="#js-validation">JavaScript Validation</a>
 - <a href="#lighthouse">Lighthouse</a>
-- <a href="#accessibility">Accessibility</a>
 - <a href="#testing-user-stories">Testing User Stories</a>
 
 ### 8. Credits
@@ -570,6 +569,67 @@ game.html - desktop view<br>
 <img src="readme-assets/second-phase/final-not-found-mobile.png"><br>
 404.html - desktop view<br>
 <img src="readme-assets/second-phase/final-not-found-desktop.png"><br>
+
+### <h3 id="testing-user-stories">Testing User Stories</h3>
+
+"As a First-Time Player, I need an intuitive design, so that I can start playing the game quickly, without frustration"
+<img src="readme-assets/second-phase/home-page-desktop.png" style="height:300px;">
+<img src="readme-assets/second-phase/game-page-desktop.png" style="height:300px;">
+
+"As a First-Time Player, I need to easily find instructions for the game, so that I know how to play it"<br>
+<img src="readme-assets/second-phase/how-to-play-button.png"><br>
+<img src="readme-assets/second-phase/how-to-play-modal.png" style="height:300px;"><br>
+
+"As a Player, I need a responsive layout, so that I can play the game on different devices"<br>
+<img src="readme-assets/second-phase/game-page-mobile.png" style="height:300px;"><br>
+<img src="readme-assets/second-phase/game-page-tablet.png" style="height:300px;"><br>
+<img src="readme-assets/second-phase/game-page-desktop.png" style="height:300px;"><br>
+
+"As a Player, I need a Play button, so that I can start playing the game"<br>
+<img src="readme-assets/second-phase/play-button.png"><br>
+
+"As a Player, I need an input area, so that I can attempt breaking the code"<br>
+<img src="readme-assets/second-phase/input-fields.png"><br>
+
+"As a Player, I need to be given warning messages for incorrect input type, so that I can correct that before submitting"<br>
+See [TESTING.md](TESTING.md) - Input Validation
+
+"As a Player, I need feedback for my guess, to know how close I am to breaking the code"<br>
+<img src="readme-assets/second-phase/feedback1.png"><br>
+
+"As a Player, I need to see all my previous tries displayed, so that I can compare them and think about the solution"<br>
+<img src="readme-assets/second-phase/feedback.png" style="height:300px;"><br>
+
+"As a Player, I need to know how many tries I have left, to adopt the best strategy in the given situation"<br>
+<img src="readme-assets/second-phase/tries-left.png">
+
+"As a Player, I need a replay button, so that I can play a new game after finishing the previous one"<br>
+<img src="readme-assets/second-phase/play-modal.png">
+<img src="readme-assets/second-phase/play-review.png">
+
+"As a Player, I would like to have beautiful images and possibly a story associated with the game, to make my playing experience more interesting"
+<img src="readme-assets/second-phase/story-desktop.png"><br>
+<img src="readme-assets/second-phase/home-page-mobile.png"><br>
+
+"As a Player, I would like to have a reward for winning the game, so that I enjoy it and continue to play it"<br>
+<img src="assets/images/enchanted-realm.webp" style="height:300px"><br>
+<img src="readme-assets/second-phase/win-modal.png"><br>
+
+
+"As a Player, I would like to have something happening when I lose the game, so that I have fun"<br>
+See [Animation](#animations) in UX section;
+
+"As a Player, I would like to:
+- to have sounds associated with the game, to enhance the playing experience;
+- to have the options of enabling/ disabling sounds, so that can choose the one I want;
+- to be able to select the level of difficulty, so that I can choose the one that suits my abilities;"
+
+These were all could-have user stories, and were left for the next phases of development.
+
+"As a developer, I want to experiment a test driven approach at least for the basic functionality of this game, so that I have a better understanding of this process and how to apply it in a project"
+I planned to use Jest to test js and have a strict TDD approach, but I settled for trying to write minimum amount of code needed before testing and moving on.
+
+
 
 
 ## <h2 id="credits2">8. Credits</h2>
