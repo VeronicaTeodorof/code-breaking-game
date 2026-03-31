@@ -1,27 +1,29 @@
 ## Table of Contents
 
-1. UI Testing
-   - Navigation / Link Testing
-   - Modal Behaviour
-   - Hover States of Buttons
-   - Input Focus Behaviour
-   - Input Validation
-   - Guess Submission and Feedback
-   - Game Over
-   - Game Logic
-2. Unit Testing
-   - Code Generation - generateCode()
-   - Input Retrieval - processData()
-   - Algorithm - checkAnswer()
-3. Responsiveness
-   - Home Page
-   - Game Page
-   - 404 Page
+1. <a href="#ui-testing">UI Testing</a>
+   - <a href="#navigation">Navigation / Link Testing</a>
+   - <a href="#modals">Modal Behaviour</a>
+   - <a href="#hover">Hover States of Buttons</a>
+   - <a href="#focus">Input Focus Behaviour</a>
+   - <a href="#validation">Input Validation</a>
+   - <a href="#submission">Guess Submission and Feedback</a>
+   - <a href="#game-over">Game Over</a>
+   - <a href="#game-logic">Game Logic</a>
+2. <a href="#unit-testing">Unit Testing</a>
+   - <a href="#code-generation">Code Generation - generateCode()</a>
+   - <a href="#input-retrieval">Input Retrieval - processData()</a>
+   - <a href="#algorithm">Algorithm - checkAnswer()</a>
+3. <a href="#responsiveness">Responsiveness</a>
+   - <a href="#home-page">Home Page</a>
+   - <a href="#game-page">Game Page</a>
+   - <a href="#not-found">404 Page</a>
+4. <a href="#appendix">Appendix: UT - Screenshots</a>
+5. <a href="#notes">Notes</a>
 
 
-## UI Testing
+## <h2 id="ui-testing">1. UI Testing</h2>
 
-### Navigation / Link Testing
+### <h3 id="navigation">Navigation / Link Testing</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -36,7 +38,7 @@
 | NAV-09 | Click Play again button on review screen | game.html reloads and new game starts | Pass |
 
 
-### Modal Behaviour
+### <h3 id="modals">Modal Behaviour</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -49,7 +51,7 @@
 | UI-07 | Loss modal - backdrop click does not close the modal | Modal doesn't close | Pass |
 | UI-08 | Loss modal - Esc key does not close modal | Modal doesn't close | Pass |
 
-### Hover States of Buttons
+### <h3 id="hover">Hover States of Buttons</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -58,7 +60,7 @@
 | UI-11 | Dragon button, ? button, home button (gamepage) | Buttons scale and cursor changes to pointer | Pass |
 | UI-12 | All modal buttons | No background colour, text changes colour, cursor changes to pointer | Pass | 
 
-### Input Focus Behaviour 
+### <h3 id="focus">Input Focus Behaviour</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -67,7 +69,7 @@
 | UI-15 | All devices - focus returns on first input after submit | First input focused after submit | Pass |
 | UI-16 | Focus moves to the next empty input | Focus moves to next empty input after a character is entered| Pass |
 
-### Input Validation
+### <h3 id="validation">Input Validation</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -78,7 +80,7 @@
 | UI-21 | Submission of guess containing letters, special characters and spaces | Letters other than "e", special characters other than "-" and ".", and spaces are blocked | Pass |
 | UI-22 | Submission of guess containing more than one digit numbers via keyboard input and paste | Permitted as input, but do not submit, appropriate feedback is given | Pass |
 
-### Guess Submission and Feedback 
+### <h3 id="submission">Guess Submission and Feedback</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -91,7 +93,7 @@
 | UI-29 | Tries count after each submission | Decrements correctly after each submission | Pass |
 
 
-### Game Over
+### <h3 id="game-over">Game Over</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -101,7 +103,7 @@
 | UI-33 | Lose modal | Lose message and play again, review, and home buttons are displayed | Pass |
 | UI-34 | Review | Modal disappears, board is revealed, play again button is revealed, key is revealed, footer with game buttons are revealed, pointers on buttons are active | Pass |
 
-### Game Logic
+### <h3 id="game-logic">Game Logic</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
@@ -114,21 +116,21 @@
 | UI-41 | Guess with all identical digits (computerCode: 0,9,4,3, guessCode: 0,0,0,0) | 1 white dot, 0 red dots | Pass |
 
 
-## Unit Testing
+## <h2 id="ui-testing">2. Unit Testing</h2>
 
-### Code Generation - generateCode()
+### <h3 id="code-generation">Code Generation - generateCode()</h3>
 
 | Test ID | Description | Expected Output | Actual Output | Pass/Fail |
 | ------- | ---- | --------------- | --------- | ------- |
 | UT-01 | generateCode() returns a 4 element array with digits 0-9 | Array of 4 digits e.g.[0,1,2,3] | [6,9,3,7] | Pass |
 
-### Input Retrieval - processData()
+### <h3 id="input-retrieval">Input Retrieval - processData()</h3>
 
 | Test ID | Description | Expected Output | Actual Output | Pass/Fail |
 | ------- | ---- | --------------- | --------- | ------- |
 | UT-02 | processData() correctly retrieves inputs as guessCode array | Inputs are correctly retrieved and parsed as integers e.g. [1,2,3,4] | [1,2,3,4] | Pass |
 
-### Algorithm - checkAnswer()
+### <h3 id="algorithm">Algorithm - checkAnswer()</h3>
 
 | Test ID | Description | computerCode | guessCode | Expected Output | Actual Output | Pass/Fail |
 | ------- | ---- | --------------- | --------- | ------- | ----- | ------- |
@@ -145,9 +147,9 @@
 | UT-13 | guessCode with all identical digits | [0,4,8,1] | [0,0,0,0] | [1,0,3] |[1,0,3] | Pass |
 
 
-## Responsiveness
+## <h2 id="responsiveness">3. Responsiveness</h2>
 
-### Home Page
+### <h3 id="home-page">Home Page</h3>
 
 | Test ID | Breakpoint | Test | Expected Result | Pass/Fail |
 | ------- | ---------- | ---- | --------------- | --------- |
@@ -155,18 +157,50 @@
 | RES-02 | Tablet (760px-1024px) | Home page layout | Dark navy background, larger h1 in light blue, play button repositioned to right of treasure chest, faint dragon silhouette on right | Pass |
 | RES-03 | Desktop (1024px+) | Home page layout | Dark navy background, h1 on one line, large dragon image on right, treasure chest and play button on left | Pass |
 
-### Game Page
+### <h3 id="game-page">Game Page</h3>
 
 | Test ID | Breakpoint | Test | Expected Result | Pass/Fail |
 | ------- | ---------- | ---- | --------------- | --------- |
 | RES-04 | Mobile (below 760px) | Feedback section layout | Single column layout | Pass |
 | RES-05 | Tablet and Desktop (760px+) | Feedback section layout | Two column layout | Pass |
 
-### 404 Page
+### <h3 id="not-found">404 Page</h3>
 
 | Test ID | Test | Expected Result | Pass/Fail |
 | ------- | ---- | --------------- | --------- |
 | RES-06 | 404 page across all breakpoints | Page displays correctly across all screen sizes | Pass |
+
+
+## <h2 id="appendix">4. Appendix - UT Sceenshots</h2>
+
+UT-01:<br>
+<img src="readme-assets/second-phase/ut-1.png" style="height:300px;"><br>
+UT-02:<br>
+<img src="readme-assets/second-phase/ut-2.png" style="height:300px;"><br>
+UT-03:<br>
+<img src="readme-assets/second-phase/ut-3.png" style="height:300px;"><br>
+UT-04:<br>
+<img src="readme-assets/second-phase/ut-4.png" style="height:300px;"><br>
+UT-05:<br>
+<img src="readme-assets/second-phase/ut-5.png" style="height:300px;"><br>
+UT-06:<br>
+<img src="readme-assets/second-phase/ut-6.png" style="height:300px;"><br>
+UT-07:<br>
+<img src="readme-assets/second-phase/ut-7.png" style="height:300px;"><br>
+UT-08:<br>
+<img src="readme-assets/second-phase/ut-8.png" style="height:300px;"><br>
+UT-09:<br>
+<img src="readme-assets/second-phase/ut-9.png" style="height:300px;"><br>
+UT-10:<br>
+<img src="readme-assets/second-phase/ut-10.png" style="height:300px;"><br>
+UT-11:<br>
+<img src="readme-assets/second-phase/ut-11.png" style="height:300px;"><br>
+UT-12:<br>
+<img src="readme-assets/second-phase/ut-12.png" style="height:300px;"><br>
+UT-13:<br>
+<img src="readme-assets/second-phase/ut-13.png" style="height:300px;"><br>
+
+
 
 
 

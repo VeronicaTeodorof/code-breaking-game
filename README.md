@@ -34,10 +34,9 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href="#typography">Typography</a>
 - <a href="#colours">Colour Scheme</a>
 - <a href="#animations">Animations</a>
-- <a href="interactivity">Interactivity</a>
 - <a href="#wireframes">Wireframes</a>
 
-### <a href="#functionality">4. Functionality
+### <a href="#functionality">4. Functionality</a>
 
 ### <a href="#technologies">5. Technologies Used</a>
 - <a href="#languages">Languages Used</a>
@@ -230,12 +229,6 @@ The review screen is the game page with a few changes: the input fields are remo
 <img src="readme-assets/second-phase/desktop404.png" style=height:400px">
 
 
-
-
-
-
-
-
 ### <h3 id="typography">Typography</h3>
 I first experimented with the playful "Mistery Quest" Google Font for heading paired with the contrasting sans-serif "Roboto" for everything else.
 
@@ -287,8 +280,9 @@ Final wireframes:<br>
 [Game page](readme-assets/second-phase/wireframe-play.png)<br>
 [404 page](readme-assets/second-phase/wireframe404.png)
 
+
 ## <h2 id="functionality">4. Functionality</h2>
-In the beginning there was the pseudo-code.<br> One of those lucky times when I actually listened to my tutor's advice before, not after getting in trouble.<br>
+In the beginning there was the pseudo-code.<br> 
 The first version was defective:
 [first pseudo-code version page 1](readme-assets/second-phase/pseudo-code-1a.png); 
 [first pseudo-code version page 2](readme-assets/second-phase/pseudo-code1b.png)<br>
@@ -413,11 +407,16 @@ How to Clone To clone the en-avant-ballet-school repository:
 ## <h2 id="testing">7. Testing</h2> 
 
  ### <h3 id="full-testing">Full Testing</h3>
+ **My tutor's feedback on final design**
  After implementing second phase design, my tutor's feedback was that I should keep the submit button everywhere (I intended to remove it completely from the mobile view because of the lack of space); he said that mobile users do not use the enter key on a virtual keyboard much and therefore I needed a dedicated button that I could even align with the form inputs to save space.  He also suggested increasing font size of the feedback and guess on the desktop view and changing some colous in the feedback for better visibility.
 
  **Instructions**
  I gave the almost finished game to a few friends and family to try. It so happened that none of them had played a Mastermind type of game before, and they all (100%) found the game confusing. Although I had mentioned in the instructions that the order of the symbols in the feedback does not relate to the order of the digits in the guess, they all believed the opposite. After chatting with Claude AI, it pointed to some gaps in my instructions: the missing digit range, not mentioning that repeated digits are allowed, not giving examples. I adjusted my instructions to include the above and I gave the example: secret key 9981, guess key 8881 gives feedback ⚪⚪❌❌, which is for most counterintuitive, 
- but I hope it catches the essence of the game. Now waiting for feedback for the adjusted instructions...
+ but I hoped it caught the essence of the game. 
+
+ After some more thought I decided to change the way the feedback was displayed; although the instructions cautioned the player about the order of symbols in feedback being unrelated to the guess itself, the guess and feedback were displayed in a similar manner: 4 digits in a row in guess, 4 symbols in a row in feedback. It was difficult to ignore the similarity, especially for players new to mastermind type of games. So my feedback now displays how many digits correctly placed and how many incorrectly placed digits are in the guess, in the format: correct digit X ⚪ incorrectly placed digit X 🔴. The instructions have been adjusted accordingly.
+
+ For a full list of tests: interactivity, unit tests, responsiveness, please see: <a href="TESTING.md">TESTING.md</a>
 
 
 ### <h3 id="solved-bugs">Solved Bugs</h3>
