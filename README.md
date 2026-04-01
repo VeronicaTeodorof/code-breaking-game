@@ -30,8 +30,8 @@ This is a trial and error game which seeks to develop critical thinking and logi
 - <a href ="#user-stories">User Stories</a>
 
 ### <a href="#story">2. The Story</a>
-- <a href="of-the-game">The Story of the Game</a>
-- <a href="in-the-game">The Story in the Game</a>
+- <a href="#of-the-game">The Story of the Game</a>
+- <a href="#in-the-game">The Story in the Game</a>
 
 ### <a href="#design">3. Design</a>
 - <a href="#features">Features</a>
